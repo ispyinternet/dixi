@@ -33,8 +33,18 @@ const LayerSelect = ({ items, title, selected, onSelect }: LayerSelectProps) => 
             <CarouselItem className="basis-1/3 sm:basis-1/4 lg:basis-1/6">
               <div className="p-1 h-full">
                 <button
-                  disabled={selected === ''}
-                  className={`rounded bg-white w-full h-full shadow-inner flex justify-center items-center ${selected === '' ? 'opacity-75' : ''}`}
+                  disabled={
+                    selected === '' ||
+                    selected === '/body/body-01.png' ||
+                    selected === '/background/background-01.png'
+                  }
+                  className={`bg-white w-full h-full shadow-inner flex justify-center items-center ${
+                    selected === '' ||
+                    selected === '/body/body-01.png' ||
+                    selected === '/background/background-01.png'
+                      ? 'opacity-75'
+                      : ''
+                  }`}
                   onClick={() => {
                     onSelect('')
                   }}
@@ -48,7 +58,7 @@ const LayerSelect = ({ items, title, selected, onSelect }: LayerSelectProps) => 
                 <div className=" p-1">
                   <button
                     disabled={selected === item.image}
-                    className={`rounded bg-white w-full h-full shadow-inner flex justify-center items-center ${selected === item.image ? 'opacity-75' : ''}`}
+                    className={`bg-white w-full h-full shadow-inner flex justify-center items-center ${selected === item.image ? 'opacity-75' : ''}`}
                     onClick={() => {
                       onSelect(item.image)
                     }}
@@ -59,8 +69,8 @@ const LayerSelect = ({ items, title, selected, onSelect }: LayerSelectProps) => 
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious variant={'block'} />
+          <CarouselNext variant={'block'} />
         </Carousel>
       </div>
     </>

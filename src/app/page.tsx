@@ -46,6 +46,12 @@ export default function Home() {
             >
               TELEGRAM
             </Link>
+            <Link
+              href={'/meme-maker'}
+              className="text-white text-lg hover:text-black hover:underline"
+            >
+              DIXI MAKER
+            </Link>
           </div>
         </section>
         <section
@@ -68,6 +74,15 @@ export default function Home() {
                 />
               </div>
             ))}
+          </div>
+          <div className="flex justify-center items-center space-x-2">
+            <span className="text-white">Try the</span>
+            <Link
+              href={'/meme-maker'}
+              className="text-white text-lg hover:text-black hover:underline"
+            >
+              Dixi Maker
+            </Link>
           </div>
         </section>
         <section

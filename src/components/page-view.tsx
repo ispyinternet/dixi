@@ -11,11 +11,16 @@ import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
 const defaultInventory = Object.keys(inventory).reduce(
   (acc, inventoryKey) => ({
     ...acc,
-    [inventoryKey]: inventoryKey === 'body' ? '/body/base.png' : '',
+    [inventoryKey]:
+      inventoryKey === 'body'
+        ? '/body/body-01.png'
+        : inventoryKey === 'background'
+          ? '/background/background-01.png'
+          : '',
   }),
   {},
 ) as Layers
-const layerSelects: (keyof Layers)[] = ['hat', 'face', 'leftHand', 'rightHand', 'outfit', 'back']
+const layerSelects: (keyof Layers)[] = ['body', 'hat', 'glass', 'shirt', 'hand', 'background']
 
 const PageView = () => {
   const [layerData, setLayerData] = useState<Layers>(defaultInventory)
@@ -38,7 +43,7 @@ const PageView = () => {
         <div className="space-x-2 my-2 justify-center flex items-center">
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant={'secondary'} onClick={resetLayers}>
+              <Button variant={'block'} size={'icon'} onClick={resetLayers}>
                 <TimerResetIcon className="size-4" />
               </Button>
             </TooltipTrigger>
@@ -46,7 +51,7 @@ const PageView = () => {
           </Tooltip>
           <Tooltip>
             <TooltipTrigger asChild>
-              <Button variant={'secondary'} onClick={randomizeLayers}>
+              <Button variant={'block'} size={'icon'} onClick={randomizeLayers}>
                 <ShuffleIcon className="size-4" />
               </Button>
             </TooltipTrigger>
@@ -55,7 +60,8 @@ const PageView = () => {
           <Tooltip>
             <TooltipTrigger asChild>
               <Button
-                variant={'secondary'}
+                variant={'block'}
+                size={'icon'}
                 onClick={() => {
                   const link = document.createElement('a')
                   link.download = 'muzki.png'
@@ -80,7 +86,12 @@ const PageView = () => {
             onSelect={(url) =>
               setLayerData({
                 ...layerData,
-                [layer]: url === '' && layer === 'body' ? '/body/base.png' : url,
+                [layer]:
+                  url === '' && layer === 'body'
+                    ? '/body/body-01.png'
+                    : url === '' && layer === 'background'
+                      ? '/background/background-01.png'
+                      : url,
               })
             }
           />

@@ -1,18 +1,8 @@
-// console.log('hi')
 import fs from 'fs'
 import path from 'path'
-const folders = [
-  'back',
-  'body',
-  'face',
-  'hat',
-  'left_hand',
-  'outfit',
-  'right_hand',
-  'background',
-  'foreground',
-  'feet',
-]
+
+const folders = ['body', 'glass', 'hat', 'hand', 'shirt', 'background']
+
 type InventoryItem = {
   title: string
   items: {
@@ -21,6 +11,7 @@ type InventoryItem = {
     name: string
   }[]
 }
+
 function toCamelCase(input: string): string {
   return input.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase())
 }
@@ -40,13 +31,23 @@ function readFilesInDirectory(directoryPath: string): string[] {
   }
 }
 
+// Function to sort filenames numerically
+function sortFilenamesNumerically(filenames: string[]): string[] {
+  return filenames.sort((a, b) => {
+    const numA = parseInt(a.match(/\d+/)?.[0] || '0', 10)
+    const numB = parseInt(b.match(/\d+/)?.[0] || '0', 10)
+    return numA - numB
+  })
+}
+
 // Function to list images in each folder
 function listImagesInFolders(folders: string[]): Record<string, InventoryItem> {
   const imagesInFolders: Record<string, InventoryItem> = {}
 
   folders.forEach((folder) => {
     const folderPath = path.join(__dirname, `/public/${folder}`) // Assuming images folders are in the same directory as this script
-    const images = readFilesInDirectory(folderPath)
+    let images = readFilesInDirectory(folderPath)
+    images = sortFilenamesNumerically(images)
     imagesInFolders[toCamelCase(folder)] = {
       title: toTitleCase(folder),
       items: images.map((item) => ({
@@ -71,6 +72,7 @@ function saveDataToFile(data: unknown, filePath: string): void {
     console.error(`Error saving data to ${filePath}: ${error}`)
   }
 }
+
 // Save the list of images in each folder to a JSON file
 const outputFilePath = path.join(__dirname, 'src', 'lib', 'inventory.json')
 saveDataToFile(imagesInFolders, outputFilePath)

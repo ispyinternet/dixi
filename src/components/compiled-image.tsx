@@ -2,14 +2,11 @@ import NextImage from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
 export type Layers = {
-  face: string
-  back: string
-  background: string
   body: string
-  leftHand: string
-  rightHand: string
-  outfit: string
-  foreground: string
+  shirt: string
+  background: string
+  glass: string
+  hand: string
   hat: string
 }
 
@@ -18,17 +15,7 @@ type CombinedImageProps = {
   onImageData: (imageData: string) => void
 }
 
-const layerIndexes: (keyof Layers)[] = [
-  'background',
-  'back',
-  'body',
-  'hat',
-  'face',
-  'leftHand',
-  'outfit',
-  'rightHand',
-  'foreground',
-]
+const layerIndexes: (keyof Layers)[] = ['background', 'body', 'glass', 'hat', 'shirt', 'hand']
 
 const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
   const [combinedImageData, setCombinedImageData] = useState('')
@@ -52,10 +39,10 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
       context.clearRect(0, 0, canvas.width, canvas.height)
 
       for (const layerIndex of layerIndexes) {
-        if (layerIndex === 'background') {
-          const img = await loadImage('./muzki.jpg')
-          context.drawImage(img, 0, 0, 1250, 1250)
-        }
+        // if (layerIndex === 'background') {
+        //   const img = await loadImage('./muzki.jpg')
+        //   context.drawImage(img, 0, 0, 1250, 1250)
+        // }
         if (layerData[layerIndex] !== '') {
           const img = await loadImage(layerData[layerIndex])
           context.drawImage(img, 0, 0, 1250, 1250)
@@ -73,7 +60,7 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
   return (
     <>
       <canvas ref={canvasRef} width={1250} height={1250} style={{ display: 'none' }} />
-      <div className="border-2 max-w-[400px] max-h-[400px] rounded">
+      <div className="border-4 border-white max-w-[400px] max-h-[400px]">
         {combinedImageData && (
           <NextImage src={combinedImageData} alt="Combined Image" width={600} height={600} />
         )}

@@ -1,46 +1,296 @@
 {
-  "back": {
-    "title": "Back",
-    "items": [
-      {
-        "image": "/back/black_cloak.png",
-        "icon": "/back/black_cloak.png",
-        "name": "Black Cloak"
-      }
-    ]
-  },
   "body": {
     "title": "Body",
     "items": [
       {
-        "image": "/body/base.png",
-        "icon": "/body/base.png",
-        "name": "Base"
+        "image": "/body/body-02.png",
+        "icon": "/body/body-02.png",
+        "name": "Body-02"
+      },
+      {
+        "image": "/body/body-03.png",
+        "icon": "/body/body-03.png",
+        "name": "Body-03"
+      },
+      {
+        "image": "/body/body-04.png",
+        "icon": "/body/body-04.png",
+        "name": "Body-04"
+      },
+      {
+        "image": "/body/body-05.png",
+        "icon": "/body/body-05.png",
+        "name": "Body-05"
+      },
+      {
+        "image": "/body/body-06.png",
+        "icon": "/body/body-06.png",
+        "name": "Body-06"
+      },
+      {
+        "image": "/body/body-07.png",
+        "icon": "/body/body-07.png",
+        "name": "Body-07"
+      },
+      {
+        "image": "/body/body-08.png",
+        "icon": "/body/body-08.png",
+        "name": "Body-08"
+      },
+      {
+        "image": "/body/body-09.png",
+        "icon": "/body/body-09.png",
+        "name": "Body-09"
+      },
+      {
+        "image": "/body/body-10.png",
+        "icon": "/body/body-10.png",
+        "name": "Body-10"
+      },
+      {
+        "image": "/body/body-11.png",
+        "icon": "/body/body-11.png",
+        "name": "Body-11"
+      },
+      {
+        "image": "/body/body-12.png",
+        "icon": "/body/body-12.png",
+        "name": "Body-12"
+      },
+      {
+        "image": "/body/body-13.png",
+        "icon": "/body/body-13.png",
+        "name": "Body-13"
+      },
+      {
+        "image": "/body/body-14.png",
+        "icon": "/body/body-14.png",
+        "name": "Body-14"
+      },
+      {
+        "image": "/body/body-16.png",
+        "icon": "/body/body-16.png",
+        "name": "Body-16"
+      },
+      {
+        "image": "/body/body-17.png",
+        "icon": "/body/body-17.png",
+        "name": "Body-17"
+      },
+      {
+        "image": "/body/body-18.png",
+        "icon": "/body/body-18.png",
+        "name": "Body-18"
+      },
+      {
+        "image": "/body/body-19.png",
+        "icon": "/body/body-19.png",
+        "name": "Body-19"
+      },
+      {
+        "image": "/body/body-20.png",
+        "icon": "/body/body-20.png",
+        "name": "Body-20"
+      },
+      {
+        "image": "/body/body-21.png",
+        "icon": "/body/body-21.png",
+        "name": "Body-21"
+      },
+      {
+        "image": "/body/body-22.png",
+        "icon": "/body/body-22.png",
+        "name": "Body-22"
+      },
+      {
+        "image": "/body/body-23.png",
+        "icon": "/body/body-23.png",
+        "name": "Body-23"
+      },
+      {
+        "image": "/body/body-24.png",
+        "icon": "/body/body-24.png",
+        "name": "Body-24"
+      },
+      {
+        "image": "/body/body-25.png",
+        "icon": "/body/body-25.png",
+        "name": "Body-25"
+      },
+      {
+        "image": "/body/body-26.png",
+        "icon": "/body/body-26.png",
+        "name": "Body-26"
+      },
+      {
+        "image": "/body/body-27.png",
+        "icon": "/body/body-27.png",
+        "name": "Body-27"
+      },
+      {
+        "image": "/body/body-28.png",
+        "icon": "/body/body-28.png",
+        "name": "Body-28"
+      },
+      {
+        "image": "/body/body-29.png",
+        "icon": "/body/body-29.png",
+        "name": "Body-29"
+      },
+      {
+        "image": "/body/body-30.png",
+        "icon": "/body/body-30.png",
+        "name": "Body-30"
       }
     ]
   },
-  "face": {
-    "title": "Face",
+  "glass": {
+    "title": "Glass",
     "items": [
       {
-        "image": "/face/morpheus_shades.png",
-        "icon": "/face/morpheus_shades.png",
-        "name": "Morpheus Shades"
+        "image": "/glass/glass-01.png",
+        "icon": "/glass/glass-01.png",
+        "name": "Glass-01"
       },
       {
-        "image": "/face/3D.png",
-        "icon": "/face/3D.png",
-        "name": "3D"
+        "image": "/glass/glass-02.png",
+        "icon": "/glass/glass-02.png",
+        "name": "Glass-02"
       },
       {
-        "image": "/face/cute.png",
-        "icon": "/face/cute.png",
-        "name": "Cute"
+        "image": "/glass/glass-03.png",
+        "icon": "/glass/glass-03.png",
+        "name": "Glass-03"
       },
       {
-        "image": "/face/thug_glasses.png",
-        "icon": "/face/thug_glasses.png",
-        "name": "Thug Glasses"
+        "image": "/glass/glass-04.png",
+        "icon": "/glass/glass-04.png",
+        "name": "Glass-04"
+      },
+      {
+        "image": "/glass/glass-05.png",
+        "icon": "/glass/glass-05.png",
+        "name": "Glass-05"
+      },
+      {
+        "image": "/glass/glass-06.png",
+        "icon": "/glass/glass-06.png",
+        "name": "Glass-06"
+      },
+      {
+        "image": "/glass/glass-07.png",
+        "icon": "/glass/glass-07.png",
+        "name": "Glass-07"
+      },
+      {
+        "image": "/glass/glass-08.png",
+        "icon": "/glass/glass-08.png",
+        "name": "Glass-08"
+      },
+      {
+        "image": "/glass/glass-09.png",
+        "icon": "/glass/glass-09.png",
+        "name": "Glass-09"
+      },
+      {
+        "image": "/glass/glass-10.png",
+        "icon": "/glass/glass-10.png",
+        "name": "Glass-10"
+      },
+      {
+        "image": "/glass/glass-11.png",
+        "icon": "/glass/glass-11.png",
+        "name": "Glass-11"
+      },
+      {
+        "image": "/glass/glass-12.png",
+        "icon": "/glass/glass-12.png",
+        "name": "Glass-12"
+      },
+      {
+        "image": "/glass/glass-13.png",
+        "icon": "/glass/glass-13.png",
+        "name": "Glass-13"
+      },
+      {
+        "image": "/glass/glass-14.png",
+        "icon": "/glass/glass-14.png",
+        "name": "Glass-14"
+      },
+      {
+        "image": "/glass/glass-16.png",
+        "icon": "/glass/glass-16.png",
+        "name": "Glass-16"
+      },
+      {
+        "image": "/glass/glass-17.png",
+        "icon": "/glass/glass-17.png",
+        "name": "Glass-17"
+      },
+      {
+        "image": "/glass/glass-18.png",
+        "icon": "/glass/glass-18.png",
+        "name": "Glass-18"
+      },
+      {
+        "image": "/glass/glass-19.png",
+        "icon": "/glass/glass-19.png",
+        "name": "Glass-19"
+      },
+      {
+        "image": "/glass/glass-20.png",
+        "icon": "/glass/glass-20.png",
+        "name": "Glass-20"
+      },
+      {
+        "image": "/glass/glass-21.png",
+        "icon": "/glass/glass-21.png",
+        "name": "Glass-21"
+      },
+      {
+        "image": "/glass/glass-22.png",
+        "icon": "/glass/glass-22.png",
+        "name": "Glass-22"
+      },
+      {
+        "image": "/glass/glass-23.png",
+        "icon": "/glass/glass-23.png",
+        "name": "Glass-23"
+      },
+      {
+        "image": "/glass/glass-24.png",
+        "icon": "/glass/glass-24.png",
+        "name": "Glass-24"
+      },
+      {
+        "image": "/glass/glass-25.png",
+        "icon": "/glass/glass-25.png",
+        "name": "Glass-25"
+      },
+      {
+        "image": "/glass/glass-26.png",
+        "icon": "/glass/glass-26.png",
+        "name": "Glass-26"
+      },
+      {
+        "image": "/glass/glass-27.png",
+        "icon": "/glass/glass-27.png",
+        "name": "Glass-27"
+      },
+      {
+        "image": "/glass/glass-28.png",
+        "icon": "/glass/glass-28.png",
+        "name": "Glass-28"
+      },
+      {
+        "image": "/glass/glass-29.png",
+        "icon": "/glass/glass-29.png",
+        "name": "Glass-29"
+      },
+      {
+        "image": "/glass/glass-30.png",
+        "icon": "/glass/glass-30.png",
+        "name": "Glass-30"
       }
     ]
   },
@@ -48,337 +298,410 @@
     "title": "Hat",
     "items": [
       {
-        "image": "/hat/COWBOY_HAT_2.png",
-        "icon": "/hat/COWBOY_HAT_2.png",
-        "name": "COWBOY_HAT_2"
+        "image": "/hat/hat-01.png",
+        "icon": "/hat/hat-01.png",
+        "name": "Hat-01"
       },
       {
-        "image": "/hat/HAT.png",
-        "icon": "/hat/HAT.png",
-        "name": "HAT"
+        "image": "/hat/hat-02.png",
+        "icon": "/hat/hat-02.png",
+        "name": "Hat-02"
       },
       {
-        "image": "/hat/PIMP_HAT.png",
-        "icon": "/hat/PIMP_HAT.png",
-        "name": "PIMP_HAT"
+        "image": "/hat/hat-03.png",
+        "icon": "/hat/hat-03.png",
+        "name": "Hat-03"
       },
       {
-        "image": "/hat/LADY_HAT.png",
-        "icon": "/hat/LADY_HAT.png",
-        "name": "LADY_HAT"
+        "image": "/hat/hat-04.png",
+        "icon": "/hat/hat-04.png",
+        "name": "Hat-04"
       },
       {
-        "image": "/hat/pink_hat.png",
-        "icon": "/hat/pink_hat.png",
-        "name": "Pink Hat"
+        "image": "/hat/hat-05.png",
+        "icon": "/hat/hat-05.png",
+        "name": "Hat-05"
       },
       {
-        "image": "/hat/COWBOY_HAT_5.png",
-        "icon": "/hat/COWBOY_HAT_5.png",
-        "name": "COWBOY_HAT_5"
+        "image": "/hat/hat-06.png",
+        "icon": "/hat/hat-06.png",
+        "name": "Hat-06"
       },
       {
-        "image": "/hat/feather_hat.png",
-        "icon": "/hat/feather_hat.png",
-        "name": "Feather Hat"
+        "image": "/hat/hat-07.png",
+        "icon": "/hat/hat-07.png",
+        "name": "Hat-07"
       },
       {
-        "image": "/hat/green_hair.png",
-        "icon": "/hat/green_hair.png",
-        "name": "Green Hair"
+        "image": "/hat/hat-08.png",
+        "icon": "/hat/hat-08.png",
+        "name": "Hat-08"
       },
       {
-        "image": "/hat/black_magic.png",
-        "icon": "/hat/black_magic.png",
-        "name": "Black Magic"
+        "image": "/hat/hat-09.png",
+        "icon": "/hat/hat-09.png",
+        "name": "Hat-09"
       },
       {
-        "image": "/hat/brazzers_cap.png",
-        "icon": "/hat/brazzers_cap.png",
-        "name": "Brazzers Cap"
+        "image": "/hat/hat-10.png",
+        "icon": "/hat/hat-10.png",
+        "name": "Hat-10"
       },
       {
-        "image": "/hat/cowboy.png",
-        "icon": "/hat/cowboy.png",
-        "name": "Cowboy"
+        "image": "/hat/hat-11.png",
+        "icon": "/hat/hat-11.png",
+        "name": "Hat-11"
       },
       {
-        "image": "/hat/orange_beanie.png",
-        "icon": "/hat/orange_beanie.png",
-        "name": "Orange Beanie"
+        "image": "/hat/hat-12.png",
+        "icon": "/hat/hat-12.png",
+        "name": "Hat-12"
       },
       {
-        "image": "/hat/anime_hat.png",
-        "icon": "/hat/anime_hat.png",
-        "name": "Anime Hat"
+        "image": "/hat/hat-13.png",
+        "icon": "/hat/hat-13.png",
+        "name": "Hat-13"
       },
       {
-        "image": "/hat/purple_hair.png",
-        "icon": "/hat/purple_hair.png",
-        "name": "Purple Hair"
+        "image": "/hat/hat-14.png",
+        "icon": "/hat/hat-14.png",
+        "name": "Hat-14"
       },
       {
-        "image": "/hat/black_cowboy_hat.png",
-        "icon": "/hat/black_cowboy_hat.png",
-        "name": "Black Cowboy Hat"
+        "image": "/hat/hat-16.png",
+        "icon": "/hat/hat-16.png",
+        "name": "Hat-16"
       },
       {
-        "image": "/hat/tupac.png",
-        "icon": "/hat/tupac.png",
-        "name": "Tupac"
+        "image": "/hat/hat-17.png",
+        "icon": "/hat/hat-17.png",
+        "name": "Hat-17"
       },
       {
-        "image": "/hat/captain.png",
-        "icon": "/hat/captain.png",
-        "name": "Captain"
+        "image": "/hat/hat-18.png",
+        "icon": "/hat/hat-18.png",
+        "name": "Hat-18"
       },
       {
-        "image": "/hat/micky.png",
-        "icon": "/hat/micky.png",
-        "name": "Micky"
+        "image": "/hat/hat-19.png",
+        "icon": "/hat/hat-19.png",
+        "name": "Hat-19"
       },
       {
-        "image": "/hat/ash_cap.png",
-        "icon": "/hat/ash_cap.png",
-        "name": "Ash Cap"
+        "image": "/hat/hat-20.png",
+        "icon": "/hat/hat-20.png",
+        "name": "Hat-20"
       },
       {
-        "image": "/hat/magic_hat.png",
-        "icon": "/hat/magic_hat.png",
-        "name": "Magic Hat"
+        "image": "/hat/hat-21.png",
+        "icon": "/hat/hat-21.png",
+        "name": "Hat-21"
       },
       {
-        "image": "/hat/ARMY_HAT.png",
-        "icon": "/hat/ARMY_HAT.png",
-        "name": "ARMY_HAT"
+        "image": "/hat/hat-22.png",
+        "icon": "/hat/hat-22.png",
+        "name": "Hat-22"
       },
       {
-        "image": "/hat/nurse.png",
-        "icon": "/hat/nurse.png",
-        "name": "Nurse"
+        "image": "/hat/hat-23.png",
+        "icon": "/hat/hat-23.png",
+        "name": "Hat-23"
       },
       {
-        "image": "/hat/white_tupac.png",
-        "icon": "/hat/white_tupac.png",
-        "name": "White Tupac"
+        "image": "/hat/hat-24.png",
+        "icon": "/hat/hat-24.png",
+        "name": "Hat-24"
       },
       {
-        "image": "/hat/123cap.png",
-        "icon": "/hat/123cap.png",
-        "name": "123cap"
+        "image": "/hat/hat-25.png",
+        "icon": "/hat/hat-25.png",
+        "name": "Hat-25"
       },
       {
-        "image": "/hat/pumpkin_hat.png",
-        "icon": "/hat/pumpkin_hat.png",
-        "name": "Pumpkin Hat"
+        "image": "/hat/hat-26.png",
+        "icon": "/hat/hat-26.png",
+        "name": "Hat-26"
       },
       {
-        "image": "/hat/ninja.png",
-        "icon": "/hat/ninja.png",
-        "name": "Ninja"
-      },
-      {
-        "image": "/hat/poke_cap.png",
-        "icon": "/hat/poke_cap.png",
-        "name": "Poke Cap"
-      },
-      {
-        "image": "/hat/tophat.png",
-        "icon": "/hat/tophat.png",
-        "name": "Tophat"
+        "image": "/hat/hat-27.png",
+        "icon": "/hat/hat-27.png",
+        "name": "Hat-27"
       }
     ]
   },
-  "leftHand": {
-    "title": "Left Hand",
+  "hand": {
+    "title": "Hand",
     "items": [
       {
-        "image": "/left_hand/GUN_2.png",
-        "icon": "/left_hand/GUN_2.png",
-        "name": "GUN_2"
+        "image": "/hand/hand-01.png",
+        "icon": "/hand/hand-01.png",
+        "name": "Hand-01"
       },
       {
-        "image": "/left_hand/lip_gloss.png",
-        "icon": "/left_hand/lip_gloss.png",
-        "name": "Lip Gloss"
+        "image": "/hand/hand-02.png",
+        "icon": "/hand/hand-02.png",
+        "name": "Hand-02"
       },
       {
-        "image": "/left_hand/rainbow_umbrella.png",
-        "icon": "/left_hand/rainbow_umbrella.png",
-        "name": "Rainbow Umbrella"
+        "image": "/hand/hand-03.png",
+        "icon": "/hand/hand-03.png",
+        "name": "Hand-03"
       },
       {
-        "image": "/left_hand/GUN_3.png",
-        "icon": "/left_hand/GUN_3.png",
-        "name": "GUN_3"
+        "image": "/hand/hand-04.png",
+        "icon": "/hand/hand-04.png",
+        "name": "Hand-04"
       },
       {
-        "image": "/left_hand/GUN_4.png",
-        "icon": "/left_hand/GUN_4.png",
-        "name": "GUN_4"
+        "image": "/hand/hand-05.png",
+        "icon": "/hand/hand-05.png",
+        "name": "Hand-05"
       },
       {
-        "image": "/left_hand/gun_aim.png",
-        "icon": "/left_hand/gun_aim.png",
-        "name": "Gun Aim"
+        "image": "/hand/hand-06.png",
+        "icon": "/hand/hand-06.png",
+        "name": "Hand-06"
       },
       {
-        "image": "/left_hand/pupmfun.png",
-        "icon": "/left_hand/pupmfun.png",
-        "name": "Pupmfun"
+        "image": "/hand/hand-07.png",
+        "icon": "/hand/hand-07.png",
+        "name": "Hand-07"
       },
       {
-        "image": "/left_hand/GUN_5.png",
-        "icon": "/left_hand/GUN_5.png",
-        "name": "GUN_5"
+        "image": "/hand/hand-08.png",
+        "icon": "/hand/hand-08.png",
+        "name": "Hand-08"
       },
       {
-        "image": "/left_hand/cigarette.png",
-        "icon": "/left_hand/cigarette.png",
-        "name": "Cigarette"
+        "image": "/hand/hand-09.png",
+        "icon": "/hand/hand-09.png",
+        "name": "Hand-09"
       },
       {
-        "image": "/left_hand/whip.png",
-        "icon": "/left_hand/whip.png",
-        "name": "Whip"
+        "image": "/hand/hand-10.png",
+        "icon": "/hand/hand-10.png",
+        "name": "Hand-10"
       },
       {
-        "image": "/left_hand/umbrella.png",
-        "icon": "/left_hand/umbrella.png",
-        "name": "Umbrella"
+        "image": "/hand/hand-11.png",
+        "icon": "/hand/hand-11.png",
+        "name": "Hand-11"
       },
       {
-        "image": "/left_hand/gun.png",
-        "icon": "/left_hand/gun.png",
-        "name": "Gun"
+        "image": "/hand/hand-12.png",
+        "icon": "/hand/hand-12.png",
+        "name": "Hand-12"
       },
       {
-        "image": "/left_hand/stick.png",
-        "icon": "/left_hand/stick.png",
-        "name": "Stick"
+        "image": "/hand/hand-13.png",
+        "icon": "/hand/hand-13.png",
+        "name": "Hand-13"
       },
       {
-        "image": "/left_hand/boba_tea.png",
-        "icon": "/left_hand/boba_tea.png",
-        "name": "Boba Tea"
+        "image": "/hand/hand-14.png",
+        "icon": "/hand/hand-14.png",
+        "name": "Hand-14"
       },
       {
-        "image": "/left_hand/tennis.png",
-        "icon": "/left_hand/tennis.png",
-        "name": "Tennis"
+        "image": "/hand/hand-16.png",
+        "icon": "/hand/hand-16.png",
+        "name": "Hand-16"
       },
       {
-        "image": "/left_hand/pokeball.png",
-        "icon": "/left_hand/pokeball.png",
-        "name": "Pokeball"
+        "image": "/hand/hand-17.png",
+        "icon": "/hand/hand-17.png",
+        "name": "Hand-17"
       },
       {
-        "image": "/left_hand/SWORD_4.png",
-        "icon": "/left_hand/SWORD_4.png",
-        "name": "SWORD_4"
+        "image": "/hand/hand-18.png",
+        "icon": "/hand/hand-18.png",
+        "name": "Hand-18"
       },
       {
-        "image": "/left_hand/SWORD_1.png",
-        "icon": "/left_hand/SWORD_1.png",
-        "name": "SWORD_1"
+        "image": "/hand/hand-19.png",
+        "icon": "/hand/hand-19.png",
+        "name": "Hand-19"
       },
       {
-        "image": "/left_hand/diamond_hands.png",
-        "icon": "/left_hand/diamond_hands.png",
-        "name": "Diamond Hands"
+        "image": "/hand/hand-20.png",
+        "icon": "/hand/hand-20.png",
+        "name": "Hand-20"
       },
       {
-        "image": "/left_hand/termometer.png",
-        "icon": "/left_hand/termometer.png",
-        "name": "Termometer"
+        "image": "/hand/hand-21.png",
+        "icon": "/hand/hand-21.png",
+        "name": "Hand-21"
       },
       {
-        "image": "/left_hand/SWORD_2.png",
-        "icon": "/left_hand/SWORD_2.png",
-        "name": "SWORD_2"
+        "image": "/hand/hand-22.png",
+        "icon": "/hand/hand-22.png",
+        "name": "Hand-22"
       },
       {
-        "image": "/left_hand/vibrator.png",
-        "icon": "/left_hand/vibrator.png",
-        "name": "Vibrator"
+        "image": "/hand/hand-23.png",
+        "icon": "/hand/hand-23.png",
+        "name": "Hand-23"
       },
       {
-        "image": "/left_hand/glock_pistol.png",
-        "icon": "/left_hand/glock_pistol.png",
-        "name": "Glock Pistol"
+        "image": "/hand/hand-24.png",
+        "icon": "/hand/hand-24.png",
+        "name": "Hand-24"
       },
       {
-        "image": "/left_hand/fireball.png",
-        "icon": "/left_hand/fireball.png",
-        "name": "Fireball"
+        "image": "/hand/hand-25.png",
+        "icon": "/hand/hand-25.png",
+        "name": "Hand-25"
       },
       {
-        "image": "/left_hand/magic.png",
-        "icon": "/left_hand/magic.png",
-        "name": "Magic"
+        "image": "/hand/hand-26.png",
+        "icon": "/hand/hand-26.png",
+        "name": "Hand-26"
       },
       {
-        "image": "/left_hand/rapier.png",
-        "icon": "/left_hand/rapier.png",
-        "name": "Rapier"
+        "image": "/hand/hand-27.png",
+        "icon": "/hand/hand-27.png",
+        "name": "Hand-27"
+      },
+      {
+        "image": "/hand/hand-28.png",
+        "icon": "/hand/hand-28.png",
+        "name": "Hand-28"
+      },
+      {
+        "image": "/hand/hand-29.png",
+        "icon": "/hand/hand-29.png",
+        "name": "Hand-29"
+      },
+      {
+        "image": "/hand/hand-30.png",
+        "icon": "/hand/hand-30.png",
+        "name": "Hand-30"
       }
     ]
   },
-  "outfit": {
-    "title": "Outfit",
+  "shirt": {
+    "title": "Shirt",
     "items": [
       {
-        "image": "/outfit/leather_belt.png",
-        "icon": "/outfit/leather_belt.png",
-        "name": "Leather Belt"
+        "image": "/shirt/shirt-01.png",
+        "icon": "/shirt/shirt-01.png",
+        "name": "Shirt-01"
       },
       {
-        "image": "/outfit/scarf.png",
-        "icon": "/outfit/scarf.png",
-        "name": "Scarf"
+        "image": "/shirt/shirt-02.png",
+        "icon": "/shirt/shirt-02.png",
+        "name": "Shirt-02"
       },
       {
-        "image": "/outfit/skirt.png",
-        "icon": "/outfit/skirt.png",
-        "name": "Skirt"
-      }
-    ]
-  },
-  "rightHand": {
-    "title": "Right Hand",
-    "items": [
-      {
-        "image": "/right_hand/GUN_1.png",
-        "icon": "/right_hand/GUN_1.png",
-        "name": "GUN_1"
+        "image": "/shirt/shirt-03.png",
+        "icon": "/shirt/shirt-03.png",
+        "name": "Shirt-03"
       },
       {
-        "image": "/right_hand/pink_purse.png",
-        "icon": "/right_hand/pink_purse.png",
-        "name": "Pink Purse"
+        "image": "/shirt/shirt-04.png",
+        "icon": "/shirt/shirt-04.png",
+        "name": "Shirt-04"
       },
       {
-        "image": "/right_hand/mop.png",
-        "icon": "/right_hand/mop.png",
-        "name": "Mop"
+        "image": "/shirt/shirt-05.png",
+        "icon": "/shirt/shirt-05.png",
+        "name": "Shirt-05"
       },
       {
-        "image": "/right_hand/BAG.png",
-        "icon": "/right_hand/BAG.png",
-        "name": "BAG"
+        "image": "/shirt/shirt-06.png",
+        "icon": "/shirt/shirt-06.png",
+        "name": "Shirt-06"
+      },
+      {
+        "image": "/shirt/shirt-07.png",
+        "icon": "/shirt/shirt-07.png",
+        "name": "Shirt-07"
       }
     ]
   },
   "background": {
     "title": "Background",
-    "items": []
-  },
-  "foreground": {
-    "title": "Foreground",
-    "items": []
-  },
-  "feet": {
-    "title": "Feet",
-    "items": []
+    "items": [
+      {
+        "image": "/background/background-02.png",
+        "icon": "/background/background-02.png",
+        "name": "Background-02"
+      },
+      {
+        "image": "/background/background-03.png",
+        "icon": "/background/background-03.png",
+        "name": "Background-03"
+      },
+      {
+        "image": "/background/background-04.png",
+        "icon": "/background/background-04.png",
+        "name": "Background-04"
+      },
+      {
+        "image": "/background/background-05.png",
+        "icon": "/background/background-05.png",
+        "name": "Background-05"
+      },
+      {
+        "image": "/background/background-06.png",
+        "icon": "/background/background-06.png",
+        "name": "Background-06"
+      },
+      {
+        "image": "/background/background-07.png",
+        "icon": "/background/background-07.png",
+        "name": "Background-07"
+      },
+      {
+        "image": "/background/background-08.png",
+        "icon": "/background/background-08.png",
+        "name": "Background-08"
+      },
+      {
+        "image": "/background/background-09.png",
+        "icon": "/background/background-09.png",
+        "name": "Background-09"
+      },
+      {
+        "image": "/background/background-10.png",
+        "icon": "/background/background-10.png",
+        "name": "Background-10"
+      },
+      {
+        "image": "/background/background-11.png",
+        "icon": "/background/background-11.png",
+        "name": "Background-11"
+      },
+      {
+        "image": "/background/background-12.png",
+        "icon": "/background/background-12.png",
+        "name": "Background-12"
+      },
+      {
+        "image": "/background/background-13.png",
+        "icon": "/background/background-13.png",
+        "name": "Background-13"
+      },
+      {
+        "image": "/background/background-14.png",
+        "icon": "/background/background-14.png",
+        "name": "Background-14"
+      },
+      {
+        "image": "/background/background-16.png",
+        "icon": "/background/background-16.png",
+        "name": "Background-16"
+      },
+      {
+        "image": "/background/background-17.png",
+        "icon": "/background/background-17.png",
+        "name": "Background-17"
+      },
+      {
+        "image": "/background/background-18.png",
+        "icon": "/background/background-18.png",
+        "name": "Background-18"
+      }
+    ]
   }
 }
