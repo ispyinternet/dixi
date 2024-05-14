@@ -1,0 +1,384 @@
+{
+  "back": {
+    "title": "Back",
+    "items": [
+      {
+        "image": "/back/black_cloak.png",
+        "icon": "/back/black_cloak.png",
+        "name": "Black Cloak"
+      }
+    ]
+  },
+  "body": {
+    "title": "Body",
+    "items": [
+      {
+        "image": "/body/base.png",
+        "icon": "/body/base.png",
+        "name": "Base"
+      }
+    ]
+  },
+  "face": {
+    "title": "Face",
+    "items": [
+      {
+        "image": "/face/morpheus_shades.png",
+        "icon": "/face/morpheus_shades.png",
+        "name": "Morpheus Shades"
+      },
+      {
+        "image": "/face/3D.png",
+        "icon": "/face/3D.png",
+        "name": "3D"
+      },
+      {
+        "image": "/face/cute.png",
+        "icon": "/face/cute.png",
+        "name": "Cute"
+      },
+      {
+        "image": "/face/thug_glasses.png",
+        "icon": "/face/thug_glasses.png",
+        "name": "Thug Glasses"
+      }
+    ]
+  },
+  "hat": {
+    "title": "Hat",
+    "items": [
+      {
+        "image": "/hat/COWBOY_HAT_2.png",
+        "icon": "/hat/COWBOY_HAT_2.png",
+        "name": "COWBOY_HAT_2"
+      },
+      {
+        "image": "/hat/HAT.png",
+        "icon": "/hat/HAT.png",
+        "name": "HAT"
+      },
+      {
+        "image": "/hat/PIMP_HAT.png",
+        "icon": "/hat/PIMP_HAT.png",
+        "name": "PIMP_HAT"
+      },
+      {
+        "image": "/hat/LADY_HAT.png",
+        "icon": "/hat/LADY_HAT.png",
+        "name": "LADY_HAT"
+      },
+      {
+        "image": "/hat/pink_hat.png",
+        "icon": "/hat/pink_hat.png",
+        "name": "Pink Hat"
+      },
+      {
+        "image": "/hat/COWBOY_HAT_5.png",
+        "icon": "/hat/COWBOY_HAT_5.png",
+        "name": "COWBOY_HAT_5"
+      },
+      {
+        "image": "/hat/feather_hat.png",
+        "icon": "/hat/feather_hat.png",
+        "name": "Feather Hat"
+      },
+      {
+        "image": "/hat/green_hair.png",
+        "icon": "/hat/green_hair.png",
+        "name": "Green Hair"
+      },
+      {
+        "image": "/hat/black_magic.png",
+        "icon": "/hat/black_magic.png",
+        "name": "Black Magic"
+      },
+      {
+        "image": "/hat/brazzers_cap.png",
+        "icon": "/hat/brazzers_cap.png",
+        "name": "Brazzers Cap"
+      },
+      {
+        "image": "/hat/cowboy.png",
+        "icon": "/hat/cowboy.png",
+        "name": "Cowboy"
+      },
+      {
+        "image": "/hat/orange_beanie.png",
+        "icon": "/hat/orange_beanie.png",
+        "name": "Orange Beanie"
+      },
+      {
+        "image": "/hat/anime_hat.png",
+        "icon": "/hat/anime_hat.png",
+        "name": "Anime Hat"
+      },
+      {
+        "image": "/hat/purple_hair.png",
+        "icon": "/hat/purple_hair.png",
+        "name": "Purple Hair"
+      },
+      {
+        "image": "/hat/black_cowboy_hat.png",
+        "icon": "/hat/black_cowboy_hat.png",
+        "name": "Black Cowboy Hat"
+      },
+      {
+        "image": "/hat/tupac.png",
+        "icon": "/hat/tupac.png",
+        "name": "Tupac"
+      },
+      {
+        "image": "/hat/captain.png",
+        "icon": "/hat/captain.png",
+        "name": "Captain"
+      },
+      {
+        "image": "/hat/micky.png",
+        "icon": "/hat/micky.png",
+        "name": "Micky"
+      },
+      {
+        "image": "/hat/ash_cap.png",
+        "icon": "/hat/ash_cap.png",
+        "name": "Ash Cap"
+      },
+      {
+        "image": "/hat/magic_hat.png",
+        "icon": "/hat/magic_hat.png",
+        "name": "Magic Hat"
+      },
+      {
+        "image": "/hat/ARMY_HAT.png",
+        "icon": "/hat/ARMY_HAT.png",
+        "name": "ARMY_HAT"
+      },
+      {
+        "image": "/hat/nurse.png",
+        "icon": "/hat/nurse.png",
+        "name": "Nurse"
+      },
+      {
+        "image": "/hat/white_tupac.png",
+        "icon": "/hat/white_tupac.png",
+        "name": "White Tupac"
+      },
+      {
+        "image": "/hat/123cap.png",
+        "icon": "/hat/123cap.png",
+        "name": "123cap"
+      },
+      {
+        "image": "/hat/pumpkin_hat.png",
+        "icon": "/hat/pumpkin_hat.png",
+        "name": "Pumpkin Hat"
+      },
+      {
+        "image": "/hat/ninja.png",
+        "icon": "/hat/ninja.png",
+        "name": "Ninja"
+      },
+      {
+        "image": "/hat/poke_cap.png",
+        "icon": "/hat/poke_cap.png",
+        "name": "Poke Cap"
+      },
+      {
+        "image": "/hat/tophat.png",
+        "icon": "/hat/tophat.png",
+        "name": "Tophat"
+      }
+    ]
+  },
+  "leftHand": {
+    "title": "Left Hand",
+    "items": [
+      {
+        "image": "/left_hand/GUN_2.png",
+        "icon": "/left_hand/GUN_2.png",
+        "name": "GUN_2"
+      },
+      {
+        "image": "/left_hand/lip_gloss.png",
+        "icon": "/left_hand/lip_gloss.png",
+        "name": "Lip Gloss"
+      },
+      {
+        "image": "/left_hand/rainbow_umbrella.png",
+        "icon": "/left_hand/rainbow_umbrella.png",
+        "name": "Rainbow Umbrella"
+      },
+      {
+        "image": "/left_hand/GUN_3.png",
+        "icon": "/left_hand/GUN_3.png",
+        "name": "GUN_3"
+      },
+      {
+        "image": "/left_hand/GUN_4.png",
+        "icon": "/left_hand/GUN_4.png",
+        "name": "GUN_4"
+      },
+      {
+        "image": "/left_hand/gun_aim.png",
+        "icon": "/left_hand/gun_aim.png",
+        "name": "Gun Aim"
+      },
+      {
+        "image": "/left_hand/pupmfun.png",
+        "icon": "/left_hand/pupmfun.png",
+        "name": "Pupmfun"
+      },
+      {
+        "image": "/left_hand/GUN_5.png",
+        "icon": "/left_hand/GUN_5.png",
+        "name": "GUN_5"
+      },
+      {
+        "image": "/left_hand/cigarette.png",
+        "icon": "/left_hand/cigarette.png",
+        "name": "Cigarette"
+      },
+      {
+        "image": "/left_hand/whip.png",
+        "icon": "/left_hand/whip.png",
+        "name": "Whip"
+      },
+      {
+        "image": "/left_hand/umbrella.png",
+        "icon": "/left_hand/umbrella.png",
+        "name": "Umbrella"
+      },
+      {
+        "image": "/left_hand/gun.png",
+        "icon": "/left_hand/gun.png",
+        "name": "Gun"
+      },
+      {
+        "image": "/left_hand/stick.png",
+        "icon": "/left_hand/stick.png",
+        "name": "Stick"
+      },
+      {
+        "image": "/left_hand/boba_tea.png",
+        "icon": "/left_hand/boba_tea.png",
+        "name": "Boba Tea"
+      },
+      {
+        "image": "/left_hand/tennis.png",
+        "icon": "/left_hand/tennis.png",
+        "name": "Tennis"
+      },
+      {
+        "image": "/left_hand/pokeball.png",
+        "icon": "/left_hand/pokeball.png",
+        "name": "Pokeball"
+      },
+      {
+        "image": "/left_hand/SWORD_4.png",
+        "icon": "/left_hand/SWORD_4.png",
+        "name": "SWORD_4"
+      },
+      {
+        "image": "/left_hand/SWORD_1.png",
+        "icon": "/left_hand/SWORD_1.png",
+        "name": "SWORD_1"
+      },
+      {
+        "image": "/left_hand/diamond_hands.png",
+        "icon": "/left_hand/diamond_hands.png",
+        "name": "Diamond Hands"
+      },
+      {
+        "image": "/left_hand/termometer.png",
+        "icon": "/left_hand/termometer.png",
+        "name": "Termometer"
+      },
+      {
+        "image": "/left_hand/SWORD_2.png",
+        "icon": "/left_hand/SWORD_2.png",
+        "name": "SWORD_2"
+      },
+      {
+        "image": "/left_hand/vibrator.png",
+        "icon": "/left_hand/vibrator.png",
+        "name": "Vibrator"
+      },
+      {
+        "image": "/left_hand/glock_pistol.png",
+        "icon": "/left_hand/glock_pistol.png",
+        "name": "Glock Pistol"
+      },
+      {
+        "image": "/left_hand/fireball.png",
+        "icon": "/left_hand/fireball.png",
+        "name": "Fireball"
+      },
+      {
+        "image": "/left_hand/magic.png",
+        "icon": "/left_hand/magic.png",
+        "name": "Magic"
+      },
+      {
+        "image": "/left_hand/rapier.png",
+        "icon": "/left_hand/rapier.png",
+        "name": "Rapier"
+      }
+    ]
+  },
+  "outfit": {
+    "title": "Outfit",
+    "items": [
+      {
+        "image": "/outfit/leather_belt.png",
+        "icon": "/outfit/leather_belt.png",
+        "name": "Leather Belt"
+      },
+      {
+        "image": "/outfit/scarf.png",
+        "icon": "/outfit/scarf.png",
+        "name": "Scarf"
+      },
+      {
+        "image": "/outfit/skirt.png",
+        "icon": "/outfit/skirt.png",
+        "name": "Skirt"
+      }
+    ]
+  },
+  "rightHand": {
+    "title": "Right Hand",
+    "items": [
+      {
+        "image": "/right_hand/GUN_1.png",
+        "icon": "/right_hand/GUN_1.png",
+        "name": "GUN_1"
+      },
+      {
+        "image": "/right_hand/pink_purse.png",
+        "icon": "/right_hand/pink_purse.png",
+        "name": "Pink Purse"
+      },
+      {
+        "image": "/right_hand/mop.png",
+        "icon": "/right_hand/mop.png",
+        "name": "Mop"
+      },
+      {
+        "image": "/right_hand/BAG.png",
+        "icon": "/right_hand/BAG.png",
+        "name": "BAG"
+      }
+    ]
+  },
+  "background": {
+    "title": "Background",
+    "items": []
+  },
+  "foreground": {
+    "title": "Foreground",
+    "items": []
+  },
+  "feet": {
+    "title": "Feet",
+    "items": []
+  }
+}
