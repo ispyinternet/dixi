@@ -1,3 +1,4 @@
+import { ArrowLeftIcon } from 'lucide-react'
 import { Metadata } from 'next'
 import Link from 'next/link'
 
@@ -15,8 +16,9 @@ export default function Home() {
         <div className="flex w-full p-5">
           <div className="w-1/3">
             <Link href="/">
-              <Button variant={'block'} size="lg" className="rounded-none">
-                Back
+              <Button variant={'block'} className="rounded-none flex items-center space-x-2">
+                <ArrowLeftIcon className="size-5" />
+                <span className="hidden sm:block">Back</span>
               </Button>
             </Link>
           </div>
