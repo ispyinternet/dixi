@@ -3,6 +3,11 @@
     "title": "Body",
     "items": [
       {
+        "image": "/body/body-01.png",
+        "icon": "/body/body-01.png",
+        "name": "Body-01"
+      },
+      {
         "image": "/body/body-02.png",
         "icon": "/body/body-02.png",
         "name": "Body-02"
@@ -426,6 +431,36 @@
         "image": "/hat/hat-27.png",
         "icon": "/hat/hat-27.png",
         "name": "Hat-27"
+      },
+      {
+        "image": "/hat/hat-28.png",
+        "icon": "/hat/hat-28.png",
+        "name": "Hat-28"
+      },
+      {
+        "image": "/hat/hat-29.png",
+        "icon": "/hat/hat-29.png",
+        "name": "Hat-29"
+      },
+      {
+        "image": "/hat/hat-30.png",
+        "icon": "/hat/hat-30.png",
+        "name": "Hat-30"
+      },
+      {
+        "image": "/hat/hat-31.png",
+        "icon": "/hat/hat-31.png",
+        "name": "Hat-31"
+      },
+      {
+        "image": "/hat/hat-32.png",
+        "icon": "/hat/hat-32.png",
+        "name": "Hat-32"
+      },
+      {
+        "image": "/hat/hat-33.png",
+        "icon": "/hat/hat-33.png",
+        "name": "Hat-33"
       }
     ]
   },
@@ -588,9 +623,19 @@
         "name": "Shirt-01"
       },
       {
+        "image": "/shirt/costume-01.png",
+        "icon": "/shirt/costume-01.png",
+        "name": "Costume-01"
+      },
+      {
         "image": "/shirt/shirt-02.png",
         "icon": "/shirt/shirt-02.png",
         "name": "Shirt-02"
+      },
+      {
+        "image": "/shirt/costume-02.png",
+        "icon": "/shirt/costume-02.png",
+        "name": "Costume-02"
       },
       {
         "image": "/shirt/shirt-03.png",
@@ -598,14 +643,34 @@
         "name": "Shirt-03"
       },
       {
+        "image": "/shirt/costume-03.png",
+        "icon": "/shirt/costume-03.png",
+        "name": "Costume-03"
+      },
+      {
+        "image": "/shirt/costume-04.png",
+        "icon": "/shirt/costume-04.png",
+        "name": "Costume-04"
+      },
+      {
         "image": "/shirt/shirt-04.png",
         "icon": "/shirt/shirt-04.png",
         "name": "Shirt-04"
       },
       {
+        "image": "/shirt/costume-05.png",
+        "icon": "/shirt/costume-05.png",
+        "name": "Costume-05"
+      },
+      {
         "image": "/shirt/shirt-05.png",
         "icon": "/shirt/shirt-05.png",
         "name": "Shirt-05"
+      },
+      {
+        "image": "/shirt/costume-06.png",
+        "icon": "/shirt/costume-06.png",
+        "name": "Costume-06"
       },
       {
         "image": "/shirt/shirt-06.png",
@@ -622,6 +687,11 @@
   "background": {
     "title": "Background",
     "items": [
+      {
+        "image": "/background/background-01.png",
+        "icon": "/background/background-01.png",
+        "name": "Background-01"
+      },
       {
         "image": "/background/background-02.png",
         "icon": "/background/background-02.png",
@@ -701,6 +771,36 @@
         "image": "/background/background-18.png",
         "icon": "/background/background-18.png",
         "name": "Background-18"
+      },
+      {
+        "image": "/background/Background-19.png",
+        "icon": "/background/Background-19.png",
+        "name": "Background-19"
+      },
+      {
+        "image": "/background/Background-20.png",
+        "icon": "/background/Background-20.png",
+        "name": "Background-20"
+      },
+      {
+        "image": "/background/Background-21.png",
+        "icon": "/background/Background-21.png",
+        "name": "Background-21"
+      },
+      {
+        "image": "/background/Background-22.png",
+        "icon": "/background/Background-22.png",
+        "name": "Background-22"
+      },
+      {
+        "image": "/background/Background-23.png",
+        "icon": "/background/Background-23.png",
+        "name": "Background-23"
+      },
+      {
+        "image": "/background/Background-24.png",
+        "icon": "/background/Background-24.png",
+        "name": "Background-24"
       }
     ]
   }
