@@ -64,7 +64,7 @@ const PageView = () => {
                 size={'icon'}
                 onClick={() => {
                   const link = document.createElement('a')
-                  link.download = 'muzki.png'
+                  link.download = 'dixi.png'
                   link.href = imageData
                   link.click()
                 }}
