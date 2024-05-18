@@ -15,7 +15,7 @@ const defaultInventory = Object.keys(inventory).reduce(
       inventoryKey === 'body'
         ? '/body/body-01.png'
         : inventoryKey === 'background'
-          ? '/background/background-01.png'
+          ? '/default/01blank-01.png'
           : '',
   }),
   {},
@@ -90,7 +90,7 @@ const PageView = () => {
                   url === '' && layer === 'body'
                     ? '/body/body-01.png'
                     : url === '' && layer === 'background'
-                      ? '/background/background-01.png'
+                      ? '/default/01blank.png'
                       : url,
               })
             }

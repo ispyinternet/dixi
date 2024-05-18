@@ -60,7 +60,14 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
   return (
     <>
       <canvas ref={canvasRef} width={1250} height={1250} style={{ display: 'none' }} />
-      <div className="border-4 border-white max-w-[400px] max-h-[400px]">
+      <div
+        className="border-4 border-white max-w-[400px] max-h-[400px]"
+        style={{
+          backgroundImage: `url('./default/01blank-icon.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         {combinedImageData && (
           <NextImage src={combinedImageData} alt="Combined Image" width={600} height={600} />
         )}

@@ -693,6 +693,11 @@
         "name": "Background-01"
       },
       {
+        "image": "/background/01blank.png",
+        "icon": "/background/01blank.png",
+        "name": "01blank"
+      },
+      {
         "image": "/background/background-02.png",
         "icon": "/background/background-02.png",
         "name": "Background-02"
