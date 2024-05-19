@@ -15,12 +15,21 @@ const defaultInventory = Object.keys(inventory).reduce(
       inventoryKey === 'body'
         ? '/body/body-01.png'
         : inventoryKey === 'background'
-          ? '/default/01blank-01.png'
+          ? '/default/01blank-icon.png'
           : '',
   }),
   {},
 ) as Layers
-const layerSelects: (keyof Layers)[] = ['body', 'hat', 'glass', 'shirt', 'hand', 'background']
+const layerSelects: (keyof Layers)[] = [
+  'body',
+  'hat',
+  'glass',
+  'chain',
+  'shirt',
+  'hand',
+  'background',
+  'foreground',
+]
 
 const PageView = () => {
   const [layerData, setLayerData] = useState<Layers>(defaultInventory)
@@ -32,7 +41,15 @@ const PageView = () => {
     const randomized = layerSelects.reduce((acc, layer) => {
       const images = ['', ...inventory[layer].items.map((item) => item.image)]
       const randomIndex = Math.floor(Math.random() * images.length)
-      return { ...acc, [layer]: images[randomIndex] }
+      return {
+        ...acc,
+        [layer]:
+          images[randomIndex] === '' && layer === 'body'
+            ? '/body/body-01.png'
+            : images[randomIndex] === '' && layer === 'background'
+              ? '/default/01blank.png'
+              : images[randomIndex],
+      }
     }, defaultInventory)
     setLayerData(randomized)
   }

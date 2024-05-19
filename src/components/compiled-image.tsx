@@ -8,6 +8,8 @@ export type Layers = {
   glass: string
   hand: string
   hat: string
+  chain: string
+  foreground: string
 }
 
 type CombinedImageProps = {
@@ -15,7 +17,16 @@ type CombinedImageProps = {
   onImageData: (imageData: string) => void
 }
 
-const layerIndexes: (keyof Layers)[] = ['background', 'body', 'glass', 'hat', 'shirt', 'hand']
+const layerIndexes: (keyof Layers)[] = [
+  'background',
+  'body',
+  'glass',
+  'hat',
+  'shirt',
+  'chain',
+  'hand',
+  'foreground',
+]
 
 const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
   const [combinedImageData, setCombinedImageData] = useState('')

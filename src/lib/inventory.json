@@ -618,29 +618,14 @@
     "title": "Shirt",
     "items": [
       {
-        "image": "/shirt/shirt-01.png",
-        "icon": "/shirt/shirt-01.png",
-        "name": "Shirt-01"
-      },
-      {
         "image": "/shirt/costume-01.png",
         "icon": "/shirt/costume-01.png",
         "name": "Costume-01"
       },
       {
-        "image": "/shirt/shirt-02.png",
-        "icon": "/shirt/shirt-02.png",
-        "name": "Shirt-02"
-      },
-      {
         "image": "/shirt/costume-02.png",
         "icon": "/shirt/costume-02.png",
         "name": "Costume-02"
-      },
-      {
-        "image": "/shirt/shirt-03.png",
-        "icon": "/shirt/shirt-03.png",
-        "name": "Shirt-03"
       },
       {
         "image": "/shirt/costume-03.png",
@@ -691,11 +676,6 @@
         "image": "/background/background-01.png",
         "icon": "/background/background-01.png",
         "name": "Background-01"
-      },
-      {
-        "image": "/background/01blank.png",
-        "icon": "/background/01blank.png",
-        "name": "01blank"
       },
       {
         "image": "/background/background-02.png",
@@ -806,6 +786,36 @@
         "image": "/background/Background-24.png",
         "icon": "/background/Background-24.png",
         "name": "Background-24"
+      }
+    ]
+  },
+  "foreground": {
+    "title": "Foreground",
+    "items": [
+      {
+        "image": "/foreground/Dixi Set BG.png",
+        "icon": "/foreground/Dixi Set BG.png",
+        "name": "Dixi Set BG"
+      }
+    ]
+  },
+  "chain": {
+    "title": "Chain",
+    "items": [
+      {
+        "image": "/chain/shirt-01.png",
+        "icon": "/chain/shirt-01.png",
+        "name": "Shirt-01"
+      },
+      {
+        "image": "/chain/shirt-02.png",
+        "icon": "/chain/shirt-02.png",
+        "name": "Shirt-02"
+      },
+      {
+        "image": "/chain/shirt-03.png",
+        "icon": "/chain/shirt-03.png",
+        "name": "Shirt-03"
       }
     ]
   }
