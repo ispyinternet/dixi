@@ -1,5 +1,5 @@
 'use client'
-import { X } from 'lucide-react'
+import { BanIcon, X } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -30,7 +30,11 @@ const LayerSelectNew = ({ items, title, selected, onSelect }: LayerSelectProps) 
             <div className="size-24 border-[#9c4a00] border-4 bg-white">
               {selected !== '' ? (
                 <Image src={selected} alt={selected} width={200} height={200} />
-              ) : null}
+              ) : (
+                <div className="flex justify-center items-center size-full">
+                  <BanIcon className="size-10 text-[#9c4a00]" />
+                </div>
+              )}
             </div>
           </DialogTrigger>
           <DialogContent className="max-h-screen overflow-y-auto max-w-screen-md bg-[#e69c21] border-[#9c4a00] border-4 rounded-none sm:rounded-none">
