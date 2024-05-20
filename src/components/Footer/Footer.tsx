@@ -16,52 +16,37 @@ export default function Footer() {
         <Link
           href={TWITTER_URL}
           target="__blank"
-          className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          className="inline-flex size-12 justify-center items-center overflow-hidden rounded-full border focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white"
         >
-          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-background/75 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-            <TwitterIcon className="h-5 w-5" />
-          </span>
+          <TwitterIcon className="h-5 w-5" />
         </Link>
         <Link
           href={TELEGRAM_URL}
           target="__blank"
-          className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          className="inline-flex size-12 justify-center items-center overflow-hidden rounded-full border focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white"
         >
-          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-background/75 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-            <Telegram></Telegram>
-          </span>
+          <Telegram></Telegram>
         </Link>
         <Link
           href={INSTAGRAM_URL}
           target="__blank"
-          className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          className="inline-flex size-12 justify-center items-center overflow-hidden rounded-full border focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white"
         >
-          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-background/75 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-            <InstagramIcon />
-          </span>
+          <InstagramIcon />
         </Link>
         <Link
           href={DEXSCREENER_URL}
           target="__blank"
-          className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          className="inline-flex size-12 justify-center items-center overflow-hidden rounded-full border focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white"
         >
-          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-background/75 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-            <DexLogo></DexLogo>
-          </span>
+          <DexLogo></DexLogo>
         </Link>
         <Link
           href={DEXTOOLS_URL}
           target="__blank"
-          className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          className="inline-flex size-12 justify-center items-center overflow-hidden rounded-full border focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white"
         >
-          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-background/75 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-            <DexTools></DexTools>
-          </span>
+          <DexTools></DexTools>
         </Link>
       </div>
       {/* <div className="text-sm text-gray-500 dark:text-gray-400 self-start">© 2024 Dixi. All rights reserved.</div> */}
@@ -138,7 +123,7 @@ function DexTools() {
 }
 function Telegram() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="none" viewBox="0 0 92 93">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 92 93">
       <path
         fill="#fff"
         d="M25.473 44.72S44.1 36.876 50.56 34.112c2.477-1.105 10.876-4.641 10.876-4.641s3.876-1.547 3.553 2.21c-.108 1.547-.97 6.962-1.83 12.819-1.293 8.287-2.692 17.349-2.692 17.349s-.216 2.542-2.046 2.984-4.846-1.548-5.384-1.99c-.43-.331-8.076-5.304-10.875-7.735-.754-.663-1.615-1.989.107-3.536 3.877-3.647 8.507-8.178 11.306-11.05 1.292-1.327 2.584-4.42-2.8-.664-7.644 5.415-15.182 10.498-15.182 10.498s-1.722 1.105-4.953.11c-3.23-.994-6.999-2.32-6.999-2.32s-2.584-1.657 1.83-3.426z"
