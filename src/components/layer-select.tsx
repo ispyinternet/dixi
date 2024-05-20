@@ -35,12 +35,12 @@ const LayerSelect = ({ items, title, selected, onSelect }: LayerSelectProps) => 
                 <button
                   disabled={
                     selected === '' ||
-                    selected === '/body/body-01.png' ||
+                    selected === '/body/abody.png' ||
                     selected === '/default/01blank.png'
                   }
                   className={`bg-white w-full h-full shadow-inner flex justify-center items-center ${
                     selected === '' ||
-                    selected === '/body/body-01.png' ||
+                    selected === '/body/abody.png' ||
                     selected === '/default/01blank.png'
                       ? 'opacity-75'
                       : ''

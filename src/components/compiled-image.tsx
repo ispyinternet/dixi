@@ -3,8 +3,9 @@ import { useEffect, useRef, useState } from 'react'
 
 export type Layers = {
   body: string
-  shirt: string
+  costume: string
   background: string
+  land: string
   glass: string
   hand: string
   hat: string
@@ -19,10 +20,11 @@ type CombinedImageProps = {
 
 const layerIndexes: (keyof Layers)[] = [
   'background',
+  'land',
   'body',
   'glass',
   'hat',
-  'shirt',
+  'costume',
   'chain',
   'hand',
   'foreground',

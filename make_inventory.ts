@@ -1,7 +1,17 @@
 import fs from 'fs'
 import path from 'path'
 
-const folders = ['body', 'glass', 'hat', 'hand', 'shirt', 'background', 'foreground', 'chain']
+const folders = [
+  'background',
+  'land',
+  'body',
+  'costume',
+  'hat',
+  'glass',
+  'chain',
+  'hand',
+  'foreground',
+]
 
 type InventoryItem = {
   title: string

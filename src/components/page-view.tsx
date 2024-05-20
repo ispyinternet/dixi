@@ -13,7 +13,7 @@ const defaultInventory = Object.keys(inventory).reduce(
     ...acc,
     [inventoryKey]:
       inventoryKey === 'body'
-        ? '/body/body-01.png'
+        ? '/body/abody.png'
         : inventoryKey === 'background'
           ? '/default/01blank-icon.png'
           : '',
@@ -24,10 +24,11 @@ const layerSelects: (keyof Layers)[] = [
   'body',
   'hat',
   'glass',
+  'costume',
   'chain',
-  'shirt',
   'hand',
   'background',
+  'land',
   'foreground',
 ]
 
@@ -105,7 +106,7 @@ const PageView = () => {
                 ...layerData,
                 [layer]:
                   url === '' && layer === 'body'
-                    ? '/body/body-01.png'
+                    ? '/body/abody.png'
                     : url === '' && layer === 'background'
                       ? '/default/01blank.png'
                       : url,

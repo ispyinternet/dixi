@@ -3,24 +3,17 @@ import path from 'path'
 
 import sharp from 'sharp'
 
-const folders = ['body', 'glass', 'hat', 'hand', 'shirt', 'background']
-
-type InventoryItem = {
-  title: string
-  items: {
-    image: string
-    icon: string
-    name: string
-  }[]
-}
-
-function toCamelCase(input: string): string {
-  return input.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase())
-}
-
-function toTitleCase(input: string): string {
-  return input.replace(/(_|^)[a-z]/g, (match) => match.toUpperCase().replace('_', ' '))
-}
+const folders = [
+  'background',
+  'land',
+  'body',
+  'costume',
+  'hat',
+  'glass',
+  'chain',
+  'hand',
+  'foreground',
+]
 
 // Function to read files in a directory
 function readFilesInDirectory(directoryPath: string): string[] {
