@@ -1,17 +1,21 @@
 'use client'
 import { MotionValue, motion, useScroll, useSpring, useTransform } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full flex flex-col items-center text-center">
+    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full flex flex-col items-center text-center z-10">
       <h1 className="text-2xl md:text-7xl font-bold text-white">
         $dixi <br />
       </h1>
       <h4 className="max-w-2xl md:text-xl mt-8 text-white text-center">
         The First Pixel dog on Solana.
       </h4>
+      <Link className="mt-5 text-white hover:text-black" href={'/meme-maker'}>
+        Go to Dixi Maker
+      </Link>
     </div>
   )
 }
@@ -47,7 +51,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[270vh] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[180vh] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div

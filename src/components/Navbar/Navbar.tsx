@@ -3,6 +3,7 @@
 import Link from 'next/link'
 
 import { Button } from '@/components/ui/button'
+import { DEXSCREENER_URL, DEXTOOLS_URL, TELEGRAM_URL, TWITTER_URL } from '@/lib/utils'
 
 import {
   DropdownMenu,
@@ -90,16 +91,27 @@ const Navbar: React.FC = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end" className="w-48 hover-background/50">
           <DropdownMenuItem>
-            <Link href="#">Telegram</Link>
+            <Link href={TELEGRAM_URL} target="__blank">
+              Telegram
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="#">Twitter</Link>
+            <Link href={TWITTER_URL} target="__blank">
+              Twitter
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="#">DexScreener</Link>
+            <Link href={DEXSCREENER_URL} target="__blank">
+              DexScreener
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="#">Dextools</Link>
+            <Link href={DEXTOOLS_URL} target="__blank">
+              Dextools
+            </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="/meme-maker">Dixi Maker</Link>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
