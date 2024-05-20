@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 export const metadata: Metadata = {
   title: 'Dixi Maker',
   description: 'Make a custom Dixi',
-  // icons: './muzki.jpg',
+  icons: './dixi-icon.png',
 }
 export default function Home() {
   return (

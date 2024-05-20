@@ -7,6 +7,7 @@ import LayerSelect from '@/components/layer-select'
 import { Button } from '@/components/ui/button'
 import inventory from '@/lib/inventory.json'
 
+import LayerSelectNew from './layer-select-new'
 import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
 const defaultInventory = Object.keys(inventory).reduce(
   (acc, inventoryKey) => ({
@@ -15,7 +16,7 @@ const defaultInventory = Object.keys(inventory).reduce(
       inventoryKey === 'body'
         ? '/body/abody.png'
         : inventoryKey === 'background'
-          ? '/default/01blank-icon.png'
+          ? '/default/01blank.png'
           : '',
   }),
   {},
@@ -56,7 +57,7 @@ const PageView = () => {
   }
   return (
     <div className="flex-1 max-w-screen-xl flex flex-col sm:flex-row w-full">
-      <div className="flex justify-center items-center flex-col p-5 sm:py-0 sm:px-10 w-full sm:w-1/3">
+      <div className="flex  items-center flex-col p-5 sm:py-0 sm:px-10 w-full sm:w-1/3">
         <CompiledImage layerData={layerData} onImageData={setImageData} />
         <div className="space-x-2 my-2 justify-center flex items-center">
           <Tooltip>
@@ -94,25 +95,26 @@ const PageView = () => {
           </Tooltip>
         </div>
       </div>
-      <div className="flex-1 sm:w-2/3">
+      <div className="flex-1 sm:w-2/3 flex flex-wrap h-20">
         {layerSelects.map((layer, index) => (
-          <LayerSelect
-            key={index}
-            title={inventory[layer].title}
-            items={inventory[layer].items}
-            selected={layerData[layer]}
-            onSelect={(url) =>
-              setLayerData({
-                ...layerData,
-                [layer]:
-                  url === '' && layer === 'body'
-                    ? '/body/abody.png'
-                    : url === '' && layer === 'background'
-                      ? '/default/01blank.png'
-                      : url,
-              })
-            }
-          />
+          <div key={index} className="w-1/2 px-10 sm:px-0">
+            <LayerSelectNew
+              title={inventory[layer].title}
+              items={inventory[layer].items}
+              selected={layerData[layer]}
+              onSelect={(url) =>
+                setLayerData({
+                  ...layerData,
+                  [layer]:
+                    url === '' && layer === 'body'
+                      ? '/body/abody.png'
+                      : url === '' && layer === 'background'
+                        ? '/default/01blank.png'
+                        : url,
+                })
+              }
+            />
+          </div>
         ))}
       </div>
     </div>

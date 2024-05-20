@@ -74,7 +74,7 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
     <>
       <canvas ref={canvasRef} width={1250} height={1250} style={{ display: 'none' }} />
       <div
-        className="border-4 border-white max-w-[400px] max-h-[400px]"
+        className="border-[#9c4a00] border-4 max-w-[400px] max-h-[400px]"
         style={{
           backgroundImage: `url('./default/01blank-icon.png')`,
           backgroundSize: 'cover',
