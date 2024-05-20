@@ -3,7 +3,6 @@ import { DownloadIcon, ShuffleIcon, TimerResetIcon } from 'lucide-react'
 import { useState } from 'react'
 
 import CompiledImage, { Layers } from '@/components/compiled-image'
-import LayerSelect from '@/components/layer-select'
 import { Button } from '@/components/ui/button'
 import inventory from '@/lib/inventory.json'
 
@@ -24,7 +23,7 @@ const defaultInventory = Object.keys(inventory).reduce(
 const layerSelects: (keyof Layers)[] = [
   'body',
   'hat',
-  'glass',
+  'glasses',
   'costume',
   'chain',
   'hand',

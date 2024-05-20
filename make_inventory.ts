@@ -7,7 +7,7 @@ const folders = [
   'body',
   'costume',
   'hat',
-  'glass',
+  'glasses',
   'chain',
   'hand',
   'foreground',

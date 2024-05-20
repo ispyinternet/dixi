@@ -6,7 +6,7 @@ export type Layers = {
   costume: string
   background: string
   land: string
-  glass: string
+  glasses: string
   hand: string
   hat: string
   chain: string
@@ -22,7 +22,7 @@ const layerIndexes: (keyof Layers)[] = [
   'background',
   'land',
   'body',
-  'glass',
+  'glasses',
   'hat',
   'costume',
   'chain',

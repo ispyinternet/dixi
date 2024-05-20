@@ -1,16 +1,9 @@
 'use client'
-import { BanIcon, X } from 'lucide-react'
+import { X } from 'lucide-react'
 import Image from 'next/image'
 import { useState } from 'react'
 
 import { Button } from './ui/button'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from './ui/carousel'
 import { Dialog, DialogContent, DialogTrigger } from './ui/dialog'
 
 type ItemInfo = {
