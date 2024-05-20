@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+import { Button } from './button'
+
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full flex flex-col items-center text-center z-10">
@@ -13,8 +15,8 @@ export const Header = () => {
       <h4 className="max-w-2xl md:text-xl mt-8 text-white text-center">
         The First Pixel dog on Solana.
       </h4>
-      <Link className="mt-5 text-white hover:text-black" href={'/meme-maker'}>
-        Go to Dixi Maker
+      <Link className="mt-5" href={'/meme-maker'}>
+        <Button className="border">Dixi Maker</Button>
       </Link>
     </div>
   )
