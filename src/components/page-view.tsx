@@ -55,7 +55,7 @@ const PageView = () => {
     setLayerData(randomized)
   }
   return (
-    <div className="flex-1 max-w-screen-xl flex flex-col sm:flex-row w-full">
+    <div className="flex-1 max-w-screen-xl flex flex-col sm:flex-row w-full mb-10">
       <div className="flex  items-center flex-col p-5 sm:py-0 sm:px-10 w-full sm:w-1/3">
         <CompiledImage layerData={layerData} onImageData={setImageData} />
         <div className="space-x-2 my-2 justify-center flex items-center">
