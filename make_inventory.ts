@@ -43,11 +43,7 @@ function readFilesInDirectory(directoryPath: string): string[] {
 
 // Function to sort filenames numerically
 function sortFilenamesNumerically(filenames: string[]): string[] {
-  return filenames.sort((a, b) => {
-    const numA = parseInt(a.match(/\d+/)?.[0] || '0', 10)
-    const numB = parseInt(b.match(/\d+/)?.[0] || '0', 10)
-    return numA - numB
-  })
+  return filenames.sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
 }
 
 // Function to list images in each folder
