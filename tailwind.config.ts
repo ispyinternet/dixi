@@ -1,6 +1,10 @@
 import type { Config } from "tailwindcss"
 const { fontFamily } = require("tailwindcss/defaultTheme")
 
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 const config = {
   darkMode: ["class"],
   content: [
@@ -19,6 +23,10 @@ const config = {
       },
     },
     extend: {
+      cursor: {
+        default: 'url(/CursorSmall.png), default',
+        pointer: 'url(/CursorSmall.png), pointer',
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         start: ["var(--font-press-start)", ...fontFamily.sans],
@@ -79,7 +87,18 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),addVariablesForColors],
 } satisfies Config
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
 
 export default config
