@@ -11,6 +11,10 @@ export type Layers = {
   hat: string
   chain: string
   foreground: string
+  bubble: {
+    image: string
+    content: string
+  }
 }
 
 type CombinedImageProps = {
@@ -28,7 +32,37 @@ const layerIndexes: (keyof Layers)[] = [
   'chain',
   'hand',
   'foreground',
+  'bubble'
 ]
+
+const characterLayerIndexes = [
+  'body',
+  'glasses',
+  'hat',
+  'costume',
+  'chain',
+  'hand'
+]
+
+const formatContentToLines = (words: string[], maxLength: number) => {
+  const formattedLines = []
+  let currentLine = ''
+
+  words.forEach((word) => {
+    if (currentLine.length + word.length + (currentLine ? 1 : 0) <= maxLength) {
+      currentLine += (currentLine ? ' ' : '') + word
+    } else {
+      formattedLines.push(currentLine)
+      currentLine = word
+    }
+  })
+
+  if (currentLine) {
+    formattedLines.push(currentLine)
+  }
+
+  return formattedLines
+}
 
 const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
   const [combinedImageData, setCombinedImageData] = useState('')
@@ -51,14 +85,43 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
       if (!canvas || !context) return
       context.clearRect(0, 0, canvas.width, canvas.height)
 
+      const hasBubble = layerData.bubble.image != '' ? true : false
       for (const layerIndex of layerIndexes) {
         // if (layerIndex === 'background') {
         //   const img = await loadImage('./muzki.jpg')
         //   context.drawImage(img, 0, 0, 1250, 1250)
-        // }
-        if (layerData[layerIndex] !== '') {
-          const img = await loadImage(layerData[layerIndex])
+        // }    
+        if (layerIndex === 'bubble' && layerData[layerIndex].image !== '') {          
+          const img = await loadImage(layerData[layerIndex].image)
           context.drawImage(img, 0, 0, 1250, 1250)
+
+          const layerContent = layerData[layerIndex].content
+          const xPos = 740
+          let yPos = 80
+          const maxYPos = 350
+          let fontSize = 28
+          const charsPerLine = 16
+
+          if (charsPerLine >= layerContent.length) {
+            yPos = yPos + ((charsPerLine / layerContent.length) * 25)
+            fontSize = fontSize * charsPerLine / layerContent.length
+          }
+
+          context.fillStyle = 'black'
+          context.font = `${fontSize}px __Press_Start_2P_b676d4`
+
+          const formattedContent = formatContentToLines(layerContent.split(/\s+/).map(str => str.trim()), charsPerLine)
+
+          formattedContent.forEach(c => {
+              if (yPos >= maxYPos) return
+              context.fillText(c, xPos, yPos)
+              yPos += 45
+          })
+        } else if (layerIndex !== 'bubble' && layerData[layerIndex] !== '') {
+          const xPos = characterLayerIndexes.includes(layerIndex) && hasBubble ? -250 : 0
+          const yPos = characterLayerIndexes.includes(layerIndex) && hasBubble ? 50 : 0
+          const img = await loadImage(layerData[layerIndex])
+          context.drawImage(img, xPos, yPos, 1250, 1250)
         }
       }
 

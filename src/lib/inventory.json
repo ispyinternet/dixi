@@ -3883,5 +3883,15 @@
         "name": "Dixi Set BG"
       }
     ]
+  },
+  "bubble": {
+    "title": "Bubble",
+    "items": [
+      {
+        "image": "/bubble/speech-right.png",
+        "icon": "/bubble/speech-right.png",
+        "name": "Speech Right"
+      }
+    ]
   }
 }
