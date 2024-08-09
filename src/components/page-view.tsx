@@ -18,7 +18,7 @@ const defaultInventory = Object.keys(inventory).reduce(
           ? '/default/01blank.png'
           : inventoryKey === 'bubble'
             ? { image: '', content: '' }
-            : ''
+            : '',
   }),
   {},
 ) as Layers
@@ -32,7 +32,7 @@ const layerSelects: (keyof Layers)[] = [
   'background',
   'land',
   'foreground',
-  'bubble'
+  'bubble',
 ]
 
 const PageView = () => {
@@ -111,16 +111,25 @@ const PageView = () => {
                   ...layerData,
                   [layer]:
                     layer === 'bubble'
-                    ? { image: url, content }
-                    : url === '' && layer === 'body'
-                      ? '/body/abody.png'
-                      : url === '' && layer === 'background'
-                        ? '/default/01blank.png'
-                        : url,
+                      ? {
+                          image: url,
+                          content,
+                        }
+                      : url === '' && layer === 'body'
+                        ? '/body/abody.png'
+                        : url === '' && layer === 'background'
+                          ? '/default/01blank.png'
+                          : url,
                 })
-               }
+              }}
+              contentInput={
+                layer == 'bubble'
+                  ? {
+                      title: 'Bubble Content',
+                      placeholder: 'LFG $DIXI',
+                    }
+                  : undefined
               }
-              contentInput={layer == 'bubble' ? { title: 'Bubble Content', placeholder: 'LFG $DIXI' } : undefined}
             />
           </div>
         ))}

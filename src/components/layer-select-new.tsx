@@ -1,7 +1,7 @@
 'use client'
 import { BanIcon, X } from 'lucide-react'
 import Image from 'next/image'
-import { useState, useRef } from 'react'
+import { useRef, useState } from 'react'
 
 import { Button } from './ui/button'
 import { Dialog, DialogContent, DialogTrigger } from './ui/dialog'
@@ -30,7 +30,9 @@ type LayerSelectProps = {
 
 const LayerSelectNew = ({ items, title, selected, onSelect, contentInput }: LayerSelectProps) => {
   const [open, setOpen] = useState(false)
-  const [contentInputValue, setContentInputValue] = useState(contentInput ? contentInput.placeholder : '')
+  const [contentInputValue, setContentInputValue] = useState(
+    contentInput ? contentInput.placeholder : '',
+  )
   const contentInputRef = useRef(null)
   return (
     <div>
@@ -57,7 +59,10 @@ const LayerSelectNew = ({ items, title, selected, onSelect, contentInput }: Laye
                       disabled={selected === item.image}
                       className={`bg-white w-full h-full border-[#9c4a00] border-4 flex justify-center items-center ${selected === item.image ? 'opacity-75' : ''}`}
                       onClick={() => {
-                        onSelect({ url: item.image, content: contentInput ? contentInputValue : undefined })
+                        onSelect({
+                          url: item.image,
+                          content: contentInput ? contentInputValue : undefined,
+                        })
                         setOpen(false)
                       }}
                     >
@@ -68,26 +73,37 @@ const LayerSelectNew = ({ items, title, selected, onSelect, contentInput }: Laye
               ))}
             </div>
 
-            {contentInput ? 
-               <div className='flex flex-col gap-3 mt-4'>
-               <span className='font-semibold text-lg'>{contentInput.title ? contentInput.title : "Content"}</span>
-               <textarea
-                ref={contentInputRef}
-                placeholder={contentInput.placeholder ? contentInput.placeholder : "Enter your content here"} 
-                className="text-xs px-4 py-2 rounded-none border-[#9c4a00] border-4 outline-none placeholder-gray-500 resize-none h-[75px]" 
-                maxLength={100}
-                onChange={(e) => setContentInputValue(e.target.value)}
-                value={contentInputValue}
-               />
-               <button 
-                className="w-fit justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#e69c21] border-[#9c4a00] border-4 h-10 px-4 py-2 rounded-none flex items-center space-x-2"
-                onClick={() => {
-                  onSelect({ url: selected, content: contentInput ? contentInputValue : undefined })
-                  setOpen(false)
-                }}
-               >Ok</button>
+            {contentInput ? (
+              <div className="flex flex-col gap-3 mt-4">
+                <span className="font-semibold text-lg">
+                  {contentInput.title ? contentInput.title : 'Content'}
+                </span>
+                <textarea
+                  ref={contentInputRef}
+                  placeholder={
+                    contentInput.placeholder ? contentInput.placeholder : 'Enter your content here'
+                  }
+                  className="text-xs px-4 py-2 rounded-none border-[#9c4a00] border-4 outline-none placeholder-gray-500 resize-none h-[75px]"
+                  maxLength={100}
+                  onChange={(e) => setContentInputValue(e.target.value)}
+                  value={contentInputValue}
+                />
+                <button
+                  className="w-fit justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#e69c21] border-[#9c4a00] border-4 h-10 px-4 py-2 rounded-none flex items-center space-x-2"
+                  onClick={() => {
+                    onSelect({
+                      url: selected,
+                      content: contentInput ? contentInputValue : undefined,
+                    })
+                    setOpen(false)
+                  }}
+                >
+                  Ok
+                </button>
               </div>
-            : ''}
+            ) : (
+              ''
+            )}
           </DialogContent>
         </Dialog>
         <div>

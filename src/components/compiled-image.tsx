@@ -32,17 +32,10 @@ const layerIndexes: (keyof Layers)[] = [
   'chain',
   'hand',
   'foreground',
-  'bubble'
+  'bubble',
 ]
 
-const characterLayerIndexes = [
-  'body',
-  'glasses',
-  'hat',
-  'costume',
-  'chain',
-  'hand'
-]
+const characterLayerIndexes = ['body', 'glasses', 'hat', 'costume', 'chain', 'hand']
 
 const formatContentToLines = (words: string[], maxLength: number) => {
   const formattedLines = []
@@ -87,11 +80,7 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
 
       const hasBubble = layerData.bubble.image != '' ? true : false
       for (const layerIndex of layerIndexes) {
-        // if (layerIndex === 'background') {
-        //   const img = await loadImage('./muzki.jpg')
-        //   context.drawImage(img, 0, 0, 1250, 1250)
-        // }    
-        if (layerIndex === 'bubble' && layerData[layerIndex].image !== '') {          
+        if (layerIndex === 'bubble' && layerData[layerIndex].image !== '') {
           const img = await loadImage(layerData[layerIndex].image)
           context.drawImage(img, 0, 0, 1250, 1250)
 
@@ -103,19 +92,20 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
           const charsPerLine = 16
 
           if (charsPerLine >= layerContent.length) {
-            yPos = yPos + ((charsPerLine / layerContent.length) * 25)
-            fontSize = fontSize * charsPerLine / layerContent.length
+            yPos = yPos + (charsPerLine / layerContent.length) * 25
+            fontSize = (fontSize * charsPerLine) / layerContent.length
           }
 
           context.fillStyle = 'black'
           context.font = `${fontSize}px __Press_Start_2P_b676d4`
 
-          const formattedContent = formatContentToLines(layerContent.split(/\s+/).map(str => str.trim()), charsPerLine)
+          const contentArr = layerContent.split(/\s+/).map((str) => str.trim())
+          const formattedContent = formatContentToLines(contentArr, charsPerLine)
 
-          formattedContent.forEach(c => {
-              if (yPos >= maxYPos) return
-              context.fillText(c, xPos, yPos)
-              yPos += 45
+          formattedContent.forEach((c) => {
+            if (yPos >= maxYPos) return
+            context.fillText(c, xPos, yPos)
+            yPos += 45
           })
         } else if (layerIndex !== 'bubble' && layerData[layerIndex] !== '') {
           const xPos = characterLayerIndexes.includes(layerIndex) && hasBubble ? -250 : 0
