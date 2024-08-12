@@ -3871,6 +3871,11 @@
         "image": "/hand/hand-30.png",
         "icon": "/hand/hand-30.png",
         "name": "Hand-30"
+      },
+      {
+        "image": "/hand/hand-31.png",
+        "icon": "/hand/hand-31.png",
+        "name": "Hand-31"
       }
     ]
   },
