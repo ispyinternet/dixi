@@ -1,7 +1,7 @@
 'use client'
 import { BanIcon, X } from 'lucide-react'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 import { Button } from './ui/button'
 import { Dialog, DialogContent, DialogTrigger } from './ui/dialog'
@@ -12,15 +12,28 @@ type ItemInfo = {
   name: string
 }
 
+type OnSelectProps = {
+  url: string
+  content?: string
+}
+
 type LayerSelectProps = {
   items: ItemInfo[]
   title: string
   selected: string
-  onSelect: (url: string) => void
+  onSelect: (data: OnSelectProps) => void
+  contentInput?: {
+    title: string
+    placeholder?: string
+  }
 }
 
-const LayerSelectNew = ({ items, title, selected, onSelect }: LayerSelectProps) => {
+const LayerSelectNew = ({ items, title, selected, onSelect, contentInput }: LayerSelectProps) => {
   const [open, setOpen] = useState(false)
+  const [contentInputValue, setContentInputValue] = useState(
+    contentInput ? contentInput.placeholder : '',
+  )
+  const contentInputRef = useRef(null)
   return (
     <div>
       <div className="text-white font-semibold text-lg">{title}</div>
@@ -46,7 +59,10 @@ const LayerSelectNew = ({ items, title, selected, onSelect }: LayerSelectProps) 
                       disabled={selected === item.image}
                       className={`bg-white w-full h-full border-[#9c4a00] border-4 flex justify-center items-center ${selected === item.image ? 'opacity-75' : ''}`}
                       onClick={() => {
-                        onSelect(item.image)
+                        onSelect({
+                          url: item.image,
+                          content: contentInput ? contentInputValue : undefined,
+                        })
                         setOpen(false)
                       }}
                     >
@@ -56,6 +72,38 @@ const LayerSelectNew = ({ items, title, selected, onSelect }: LayerSelectProps) 
                 </div>
               ))}
             </div>
+
+            {contentInput ? (
+              <div className="flex flex-col gap-3 mt-4">
+                <span className="font-semibold text-lg">
+                  {contentInput.title ? contentInput.title : 'Content'}
+                </span>
+                <textarea
+                  ref={contentInputRef}
+                  placeholder={
+                    contentInput.placeholder ? contentInput.placeholder : 'Enter your content here'
+                  }
+                  className="text-xs px-4 py-2 rounded-none border-[#9c4a00] border-4 outline-none placeholder-gray-500 resize-none h-[75px]"
+                  maxLength={100}
+                  onChange={(e) => setContentInputValue(e.target.value)}
+                  value={contentInputValue}
+                />
+                <button
+                  className="w-fit justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[#e69c21] border-[#9c4a00] border-4 h-10 px-4 py-2 rounded-none flex items-center space-x-2"
+                  onClick={() => {
+                    onSelect({
+                      url: selected,
+                      content: contentInput ? contentInputValue : undefined,
+                    })
+                    setOpen(false)
+                  }}
+                >
+                  Ok
+                </button>
+              </div>
+            ) : (
+              ''
+            )}
           </DialogContent>
         </Dialog>
         <div>
@@ -67,7 +115,7 @@ const LayerSelectNew = ({ items, title, selected, onSelect }: LayerSelectProps) 
               size={'icon'}
               className="size-8"
               onClick={() => {
-                onSelect('')
+                onSelect({ url: '' })
               }}
             >
               <X className="size-4" />

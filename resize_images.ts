@@ -3,16 +3,10 @@ import path from 'path'
 
 import sharp from 'sharp'
 
+const __dirname = path.resolve();
+
 const folders = [
-  'background',
-  'land',
-  'body',
-  'costume',
-  'hat',
-  'glasses',
-  'chain',
-  'hand',
-  'foreground',
+  'bubble'
 ]
 
 // Function to read files in a directory

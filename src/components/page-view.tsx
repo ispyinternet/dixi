@@ -16,7 +16,9 @@ const defaultInventory = Object.keys(inventory).reduce(
         ? '/body/abody.png'
         : inventoryKey === 'background'
           ? '/default/01blank.png'
-          : '',
+          : inventoryKey === 'bubble'
+            ? { image: '', content: '' }
+            : '',
   }),
   {},
 ) as Layers
@@ -30,6 +32,7 @@ const layerSelects: (keyof Layers)[] = [
   'background',
   'land',
   'foreground',
+  'bubble',
 ]
 
 const PageView = () => {
@@ -49,7 +52,9 @@ const PageView = () => {
             ? '/body/body-01.png'
             : images[randomIndex] === '' && layer === 'background'
               ? '/default/01blank.png'
-              : images[randomIndex],
+              : layer === 'bubble'
+                ? { image: '', content: '' }
+                : images[randomIndex],
       }
     }, defaultInventory)
     setLayerData(randomized)
@@ -100,17 +105,30 @@ const PageView = () => {
             <LayerSelectNew
               title={inventory[layer].title}
               items={inventory[layer].items}
-              selected={layerData[layer]}
-              onSelect={(url) =>
+              selected={layer == 'bubble' ? layerData[layer].image : layerData[layer]}
+              onSelect={({ url, content }) => {
                 setLayerData({
                   ...layerData,
                   [layer]:
-                    url === '' && layer === 'body'
-                      ? '/body/abody.png'
-                      : url === '' && layer === 'background'
-                        ? '/default/01blank.png'
-                        : url,
+                    layer === 'bubble'
+                      ? {
+                          image: url,
+                          content,
+                        }
+                      : url === '' && layer === 'body'
+                        ? '/body/abody.png'
+                        : url === '' && layer === 'background'
+                          ? '/default/01blank.png'
+                          : url,
                 })
+              }}
+              contentInput={
+                layer == 'bubble'
+                  ? {
+                      title: 'Bubble Content',
+                      placeholder: 'LFG $DIXI',
+                    }
+                  : undefined
               }
             />
           </div>

@@ -11,6 +11,7 @@ const folders = [
   'chain',
   'hand',
   'foreground',
+  'bubble'
 ]
 
 type InventoryItem = {
