@@ -38,11 +38,14 @@ const layerIndexes: (keyof Layers)[] = [
 const characterLayerIndexes = ['body', 'glasses', 'hat', 'costume', 'chain', 'hand']
 
 const formatContentToLines = (words: string[], maxLength: number) => {
-  const formattedLines = []
+  let formattedLines: string[] = []
   let currentLine = ''
 
   words.forEach((word) => {
-    if (currentLine.length + word.length + (currentLine ? 1 : 0) <= maxLength) {
+    if (word.length > maxLength) {
+      const splitLine = formatContentToLines(word.match(/.{1,12}/g) as string[], maxLength)
+      formattedLines = formattedLines.concat(splitLine)
+    } else if (currentLine.length + word.length + (currentLine ? 1 : 0) <= maxLength) {
       currentLine += (currentLine ? ' ' : '') + word
     } else {
       formattedLines.push(currentLine)
@@ -84,15 +87,18 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
           const img = await loadImage(layerData[layerIndex].image)
           context.drawImage(img, 0, 0, 1250, 1250)
 
-          const layerContent = layerData[layerIndex].content
+          const layerContent = layerData[layerIndex].content.trim()
           const xPos = 740
-          let yPos = 80
+          let yPos = 85
           const maxYPos = 350
-          let fontSize = 28
-          const charsPerLine = 16
+          let fontSize = 38
+          const charsPerLine = 12
 
-          if (charsPerLine >= layerContent.length) {
-            yPos = yPos + (charsPerLine / layerContent.length) * 25
+          if (layerContent.length == 1) {
+            fontSize = 275
+            yPos = maxYPos - 25
+          } else if (charsPerLine >= layerContent.length) {
+            yPos = yPos + (charsPerLine / (layerContent.length * 1.25)) * 30
             fontSize = (fontSize * charsPerLine) / layerContent.length
           }
 
@@ -105,7 +111,7 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
           formattedContent.forEach((c) => {
             if (yPos >= maxYPos) return
             context.fillText(c, xPos, yPos)
-            yPos += 45
+            yPos += 58
           })
         } else if (layerIndex !== 'bubble' && layerData[layerIndex] !== '') {
           const xPos = characterLayerIndexes.includes(layerIndex) && hasBubble ? -250 : 0
