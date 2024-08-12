@@ -3891,6 +3891,11 @@
         "image": "/bubble/speech-right.png",
         "icon": "/bubble/speech-right.png",
         "name": "Speech Right"
+      },
+      {
+        "image": "/bubble/thinking-right.png",
+        "icon": "/bubble/thinking-right.png",
+        "name": "Thinking Right"
       }
     ]
   }
