@@ -31,7 +31,7 @@ const layerIndexes: (keyof Layers)[] = [
   'chain',
   'mask',
   'glasses',
-  'hat',    
+  'hat',
   'hand',
   'foreground',
   'bubble',
@@ -85,7 +85,6 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
 
       const hasBubble = layerData.bubble.image != '' ? true : false
       for (const layerIndex of layerIndexes) {
-        console.log('TEST LAYER INDEX', layerIndex);
         if (layerIndex === 'bubble' && layerData[layerIndex].image !== '') {
           const img = await loadImage(layerData[layerIndex].image)
           context.drawImage(img, 0, 0, 1250, 1250)
