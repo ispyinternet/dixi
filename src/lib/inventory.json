@@ -3709,6 +3709,16 @@
       }
     ]
   },
+  "mask": {
+    "title": "Mask",
+    "items": [
+      {
+        "image": "/mask/mask-1.png",
+        "icon": "/mask/mask-1.png",
+        "name": "Mask 1"
+      }
+    ]
+  },
   "chain": {
     "title": "Chain",
     "items": [

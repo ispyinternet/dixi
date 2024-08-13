@@ -27,6 +27,7 @@ const layerSelects: (keyof Layers)[] = [
   'hat',
   'glasses',
   'costume',
+  'mask',
   'chain',
   'hand',
   'background',

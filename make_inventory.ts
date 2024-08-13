@@ -8,6 +8,7 @@ const folders = [
   'costume',
   'hat',
   'glasses',
+  'mask',
   'chain',
   'hand',
   'foreground',
