@@ -3701,6 +3701,11 @@
         "image": "/glasses/acc (105).png",
         "icon": "/glasses/acc (105).png",
         "name": "Acc (105)"
+      },
+      {
+        "image": "/glasses/acc (106).png",
+        "icon": "/glasses/acc (106).png",
+        "name": "Acc (106)"
       }
     ]
   },
@@ -3876,6 +3881,16 @@
         "image": "/hand/hand-31.png",
         "icon": "/hand/hand-31.png",
         "name": "Hand-31"
+      },
+      {
+        "image": "/hand/hand-32.png",
+        "icon": "/hand/hand-32.png",
+        "name": "Hand-32"
+      },
+      {
+        "image": "/hand/hand-33.png",
+        "icon": "/hand/hand-33.png",
+        "name": "Hand-33"
       }
     ]
   },
