@@ -8,6 +8,7 @@ export type Layers = {
   land: string
   glasses: string
   hand: string
+  mask: string
   hat: string
   chain: string
   foreground: string
@@ -26,16 +27,17 @@ const layerIndexes: (keyof Layers)[] = [
   'background',
   'land',
   'body',
-  'glasses',
-  'hat',
   'costume',
   'chain',
+  'mask',
+  'glasses',
+  'hat',    
   'hand',
   'foreground',
   'bubble',
 ]
 
-const characterLayerIndexes = ['body', 'glasses', 'hat', 'costume', 'chain', 'hand']
+const characterLayerIndexes = ['body', 'glasses', 'hat', 'costume', 'chain', 'hand', 'mask']
 
 const formatContentToLines = (words: string[], maxLength: number) => {
   let formattedLines: string[] = []
@@ -83,6 +85,7 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
 
       const hasBubble = layerData.bubble.image != '' ? true : false
       for (const layerIndex of layerIndexes) {
+        console.log('TEST LAYER INDEX', layerIndex);
         if (layerIndex === 'bubble' && layerData[layerIndex].image !== '') {
           const img = await loadImage(layerData[layerIndex].image)
           context.drawImage(img, 0, 0, 1250, 1250)
