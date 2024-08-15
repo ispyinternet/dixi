@@ -2291,6 +2291,11 @@
         "image": "/costume/costume (210).png",
         "icon": "/costume/costume (210).png",
         "name": "Costume (210)"
+      },
+      {
+        "image": "/costume/costume (211).png",
+        "icon": "/costume/costume (211).png",
+        "name": "Costume (211)"
       }
     ]
   },
@@ -3171,6 +3176,11 @@
         "image": "/hat/hat (175).png",
         "icon": "/hat/hat (175).png",
         "name": "Hat (175)"
+      },
+      {
+        "image": "/hat/hat (177).png",
+        "icon": "/hat/hat (177).png",
+        "name": "Hat (177)"
       }
     ]
   },
