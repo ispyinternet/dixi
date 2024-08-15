@@ -3721,6 +3721,11 @@
         "image": "/mask/mask-2.png",
         "icon": "/mask/mask-2.png",
         "name": "Mask 2"
+      },
+      {
+        "image": "/mask/mask-3.png",
+        "icon": "/mask/mask-3.png",
+        "name": "Mask 3"
       }
     ]
   },
