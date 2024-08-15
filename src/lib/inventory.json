@@ -3916,6 +3916,11 @@
         "image": "/hand/hand-35.png",
         "icon": "/hand/hand-35.png",
         "name": "Hand-35"
+      },
+      {
+        "image": "/hand/hand-36.png",
+        "icon": "/hand/hand-36.png",
+        "name": "Hand-36"
       }
     ]
   },
@@ -3926,6 +3931,11 @@
         "image": "/foreground/Dixi Set BG.png",
         "icon": "/foreground/Dixi Set BG.png",
         "name": "Dixi Set BG"
+      },
+      {
+        "image": "/foreground/foreground-1.png",
+        "icon": "/foreground/foreground-1.png",
+        "name": "Foreground 1"
       }
     ]
   },
