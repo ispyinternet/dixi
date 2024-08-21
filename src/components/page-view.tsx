@@ -1,6 +1,7 @@
 'use client'
 import { DownloadIcon, ShuffleIcon, TimerResetIcon } from 'lucide-react'
-import { useState } from 'react'
+import { useSearchParams } from 'next/navigation'
+import { Suspense, useState } from 'react'
 
 import CompiledImage, { Config, Layers } from '@/components/compiled-image'
 import { Button } from '@/components/ui/button'
@@ -36,6 +37,56 @@ const layerSelects: (keyof Layers)[] = [
   'bubble',
 ]
 
+const ConfigOptions = ({
+  config,
+  setConfig,
+}: {
+  config: Config
+  setConfig: React.Dispatch<React.SetStateAction<Config>>
+}) => {
+  const searchParams = useSearchParams()
+  const enableConfigOptions = searchParams.get('ec') != null ? true : false
+
+  return (
+    <div
+      className={'space-x-2 my-2 flex flex-col gap-4 ' + (!enableConfigOptions ? '!hidden' : '')}
+    >
+      <span className="text-sm">
+        Add Watermark
+        <input
+          type="checkbox"
+          className="ml-2"
+          checked={config.watermark}
+          onChange={() => {
+            setConfig({
+              ...config,
+              ...{
+                watermark: !config.watermark,
+              },
+            })
+          }}
+        ></input>
+      </span>
+      <span className="text-sm">
+        Add Handle
+        <input
+          type="checkbox"
+          className="ml-2"
+          checked={config.handle}
+          onChange={() => {
+            setConfig({
+              ...config,
+              ...{
+                handle: !config.handle,
+              },
+            })
+          }}
+        ></input>
+      </span>
+    </div>
+  )
+}
+
 const PageView = () => {
   const [layerData, setLayerData] = useState<Layers>(defaultInventory)
   const [imageData, setImageData] = useState('')
@@ -43,8 +94,6 @@ const PageView = () => {
     watermark: true,
     handle: true,
   })
-  const query = window != undefined ? new URLSearchParams(window.location.search) : undefined
-  const enableConfigOptions = query != undefined && query.get('ec') != null ? true : false
   const resetLayers = () => {
     setLayerData(defaultInventory)
   }
@@ -105,44 +154,9 @@ const PageView = () => {
             <TooltipContent>Download</TooltipContent>
           </Tooltip>
         </div>
-        <div
-          className={
-            'space-x-2 my-2 flex flex-col gap-4 ' + (!enableConfigOptions ? '!hidden' : '')
-          }
-        >
-          <span className="text-sm">
-            Add Watermark
-            <input
-              type="checkbox"
-              className="ml-2"
-              checked={config.watermark}
-              onChange={() => {
-                setConfig({
-                  ...config,
-                  ...{
-                    watermark: !config.watermark,
-                  },
-                })
-              }}
-            ></input>
-          </span>
-          <span className="text-sm">
-            Add Handle
-            <input
-              type="checkbox"
-              className="ml-2"
-              checked={config.handle}
-              onChange={() => {
-                setConfig({
-                  ...config,
-                  ...{
-                    handle: !config.handle,
-                  },
-                })
-              }}
-            ></input>
-          </span>
-        </div>
+        <Suspense>
+          <ConfigOptions config={config} setConfig={setConfig} />
+        </Suspense>
       </div>
       <div className="flex-1 sm:w-2/3 flex flex-wrap h-20">
         {layerSelects.map((layer, index) => (
