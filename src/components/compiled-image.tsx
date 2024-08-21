@@ -1,6 +1,11 @@
 import NextImage from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
+export type Config = {
+  watermark: boolean
+  handle: boolean
+}
+
 export type Layers = {
   body: string
   costume: string
@@ -19,6 +24,7 @@ export type Layers = {
 }
 
 type CombinedImageProps = {
+  config: Config
   layerData: Layers
   onImageData: (imageData: string) => void
 }
@@ -62,7 +68,7 @@ const formatContentToLines = (words: string[], maxLength: number) => {
   return formattedLines
 }
 
-const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
+const CombinedImage = ({ config, layerData, onImageData }: CombinedImageProps) => {
   const [combinedImageData, setCombinedImageData] = useState('')
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
@@ -122,14 +128,57 @@ const CombinedImage = ({ layerData, onImageData }: CombinedImageProps) => {
           context.drawImage(img, xPos, yPos, 1250, 1250)
         }
       }
+    }
+
+    const addDetails = async () => {
+      if (!canvas || !context) return
+
+      let handleTextXpos = 1005
+      const handleTextYpos = 1226
+      let handleImgXpos = 0
+      const handleImgYpos = 0
+
+      context.save()
+      context.globalAlpha = 0.6
+
+      if (config.watermark) {
+        handleTextXpos = 745
+        handleImgXpos = -260
+
+        const img = await loadImage('/WatermarkBorder.png')
+        context.drawImage(img, 0, 0, 1250, 1250)
+
+        context.fillStyle = 'rgba(0, 0, 0, .60)'
+        context.font = `21px __Press_Start_2P_b676d4`
+        context.fillText('Made with', 1028, 1172)
+        context.font = `38px __Press_Start_2P_b676d4`
+        context.fillText('$DIXI', 1028, 1225)
+      }
+
+      if (config.handle) {
+        const img = await loadImage('/WatermarkBorderHandle.png')
+        context.drawImage(img, handleImgXpos, handleImgYpos, 1250, 1250)
+
+        context.fillStyle = 'rgba(0, 0, 0, .60)'
+        context.font = `21px __Press_Start_2P_b676d4`
+        context.fillText('@dixionsol', handleTextXpos, handleTextYpos)
+      }
+
+      context.restore()
+      context.globalAlpha = 1
+    }
+
+    ;(async () => {
+      if (!canvas || !context) return
+
+      await drawImages()
+      await addDetails()
 
       const imageData = canvas.toDataURL()
       setCombinedImageData(imageData)
       onImageData(imageData)
-    }
-
-    drawImages()
-  }, [layerData, onImageData])
+    })()
+  }, [config, layerData, onImageData])
 
   return (
     <>
